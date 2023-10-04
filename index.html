@@ -41,36 +41,37 @@
         <!-- Include your CSS files here -->
         <link rel="stylesheet" href="./styles/all.css">
         <link rel="stylesheet" href="./styles/home.css">
+        <link href="/dist/output.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&family=Share+Tech&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
         
         
     </head>
-    <body>
+    <body class="">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="content">
-            <header>
-                <nav>
+        <div id="content" class="flex flex-col h-full w-full">
+            <header class="md:items-center md:content-center">
+                <nav class="flex flex-row md:items-center md:justify-center h-[50px] md:h-[5vh] [&>*]:md:mx-2">
                     <a href="">Home</a>
                     <a href="./pages/about.html">About</a>
                     <a href="./pages/contactUs.html">Contact Us</a>
                     <a href="./pages/gallery.html">Gallery</a>
-                    <a href="./pages/csDeparment.html">CS Department</a>
+                    <a href="https://computerscience.tcnj.edu/">CS Department</a>
                 </nav>
             </header>
-            <main>
-                <section id="details">
-                    <!-- <div id="aboutUs"> -->
-                        <div id="missionSection">
-                            <h2>Our Mission</h2>
-                            <p>DIGIT.all (Diversity & Inclusion Group In Tech for All) is committed to making the tech community a space that is welcome to all. By providing the TCNJ community with accessible workshops and a space for guest speakers and peers alike to discuss their experiences in and around tech and tech culture, DIGIT.all seeks to promote diversity, inclusion, allyship, and awareness in STEM.</p>
+            <main class="md:h-[60vh] flex justify-center md:items-center">
+                <section id="detailsCard" class="flex px-[5vw] h-[90%] bg-[#FFFAFA] w-[75vw] md:w-[1250px] flex-col-reverse md:flex-row shadow-[3px_3px_20px_0_rgba(0,0,0,0.3)] space-x-[40px]">
+                    <div id="missionSection" class="md:w-[50%] flex flex-col justify-center">
+                        <div id="missionContainer" class="flex flex-col  h-[90%] [&>*]:md:my-5 ">
+                            <h2 class="text-2xl md:text-5xl underline">Our Mission</h2>
+                            <p class="md:text-3xl">DIGIT.all (Diversity & Inclusion Group In Tech for All) is committed to making the tech community a space that is welcome to all. By providing the TCNJ community with accessible workshops and a space for guest speakers and peers alike to discuss their experiences in and around tech and tech culture, DIGIT.all seeks to promote diversity, inclusion, allyship, and awareness in STEM.</p>
                         </div>
-                        <!-- <div id="meetingSection">
-                            <h2>Meeting Times</h2>
-                        </div> -->
-                    <!-- </div> -->
-                    <div id="imgSection">
-                        <img alt="test" src="./images/test.jpg">
+                    </div>
+                    <div id="imgSection" class="md:w-[50%]">
+                        <img class="md:h-[500px] md:w-[500px] object-contain" alt="test" src="./images/test.jpg">
                     </div>
                 </section>
                 <div  id="social-bar">
@@ -79,7 +80,7 @@
             </main>
             <footer>
                 <form>
-                    
+
                     <div id="formCard">
                         <label>Join Our Mailing List!</label>
                         <div id="infoSection">

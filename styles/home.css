@@ -4,65 +4,9 @@
     flex-direction: column;
 }
 
-#content header {
-    height: 8vh;
-    background-color: aqua;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-nav a{
-    text-decoration: none;
-    margin: 0px 25px 0px 25px;
-}
 
 #content main {
-    height: 90vh;
-    background-color: khaki;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-main #details {
-    width: 75vw;
-    display: flex;
-    flex-direction: row;
     
-}
-
-#details #aboutUs {
-    display: flex;
-    flex-direction: column;
-}
-
-#details #missionSection {
-    width: 50%;
-}
-
-#details h2 {
-    text-decoration: underline;
-}
-
-#details #imgSection {
-    width: 50%;
-}
-
-#details #imgSection img {
-    height: 500px;
-    width: 500px;
-    object-fit: contain;
 }
 
 #content footer {
