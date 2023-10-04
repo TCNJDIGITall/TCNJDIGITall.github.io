@@ -13,14 +13,14 @@
     height: 10vh;
 }
 
-#formCard {
+/* #formCard {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     justify-content: center;
     align-items: center;
     
-}
+} */
 
 #infoSection{
     border: 1px solid black;

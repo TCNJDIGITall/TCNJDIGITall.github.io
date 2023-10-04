@@ -48,25 +48,27 @@
         
         
     </head>
-    <body class="">
+    <body class="bg-[#FFEF61]">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="content" class="flex flex-col h-full w-full">
-            <header class="md:items-center md:content-center">
-                <nav class="flex flex-row md:items-center md:justify-center h-[50px] md:h-[5vh] [&>*]:md:mx-2">
-                    <a href="">Home</a>
-                    <a href="./pages/about.html">About</a>
-                    <a href="./pages/contactUs.html">Contact Us</a>
-                    <a href="./pages/gallery.html">Gallery</a>
-                    <a href="https://computerscience.tcnj.edu/">CS Department</a>
+        <div id="content" class="flex flex-col relative h-full w-full">
+            <header class="md:items-center md:content-center h-[50px] md:h-[4vh]">
+                
+                <nav class="flex flex-row md:items-center md:justify-center h-full [&>*]:md:mx-4 [&>*]:text-2xl bg-[#164B7D] text-[#FFFAFA] ">
+                    <!-- <img src="./images/icon.png" class="h-[75px]"> -->
+                    <a class="uppercase cursor-pointer">Home</a>
+                    <a href="./pages/about.html" class="uppercase">About</a>
+                    <a href="./pages/contactUs.html" class="uppercase">Contact Us</a>
+                    <a href="./pages/gallery.html" class="uppercase">Gallery</a>
+                    <a href="https://computerscience.tcnj.edu/" class="uppercase">CS Department</a>
                 </nav>
             </header>
-            <main class="md:h-[60vh] flex justify-center md:items-center">
-                <section id="detailsCard" class="flex px-[5vw] h-[90%] bg-[#FFFAFA] w-[75vw] md:w-[1250px] flex-col-reverse md:flex-row shadow-[3px_3px_20px_0_rgba(0,0,0,0.3)] space-x-[40px]">
+            <main class="md:h-[87vh] flex flex-col justify-center md:items-center space-y-[80px]">
+                <section id="detailsCard" class="flex px-[5vw] h-[90%] md:h-[60%] bg-[#FFFAFA] w-[75vw] md:w-[1250px] flex-col-reverse md:flex-row border-solid border-[3px] border-[#164B7D] space-x-[40px] shadow-[3px_3px_20px_0_rgba(0,0,0,0.3)] ">
                     <div id="missionSection" class="md:w-[50%] flex flex-col justify-center">
                         <div id="missionContainer" class="flex flex-col  h-[90%] [&>*]:md:my-5 ">
-                            <h2 class="text-2xl md:text-5xl underline">Our Mission</h2>
+                            <h2 class="text-2xl md:text-5xl text-[#164B7D] underline">Our Mission</h2>
                             <p class="md:text-3xl">DIGIT.all (Diversity & Inclusion Group In Tech for All) is committed to making the tech community a space that is welcome to all. By providing the TCNJ community with accessible workshops and a space for guest speakers and peers alike to discuss their experiences in and around tech and tech culture, DIGIT.all seeks to promote diversity, inclusion, allyship, and awareness in STEM.</p>
                         </div>
                     </div>
@@ -74,15 +76,9 @@
                         <img class="md:h-[500px] md:w-[500px] object-contain" alt="test" src="./images/test.jpg">
                     </div>
                 </section>
-                <div  id="social-bar">
-                    
-                </div>
-            </main>
-            <footer>
-                <form>
-
-                    <div id="formCard">
-                        <label>Join Our Mailing List!</label>
+                <form class="flex justify-center items-center">
+                    <div id="formCard" class="flex flex-col  border-solid border-[2px] border-black justify-normal items-center bg-[#FFFAFA] w-[65vw] md:w-[1000px] ">
+                        <label class="md:text-4xl px-[30px] border-b-4 border-black">Join Our <span class="text-[#164B7D]">Mailing List!</span></label>
                         <div id="infoSection">
                             <div id="infoName">
                                 <div id="firstNameSection" style="display: flex; flex-direction: column;">
@@ -108,10 +104,13 @@
                             </div>
                         </div>
                         <div id="submitSection">
-                            <button type="submit" id="submit">Subscribe</button>
+                            <button type="submit" id="submit" class="uppercase">Subscribe</button>
                         </div>
                     </div>
                 </form>
+            </main>
+            <footer class="">
+                <img src="./images/icon.png" class="h-[125px]">
             </footer>
         </div>
         <script src="" async defer></script>
