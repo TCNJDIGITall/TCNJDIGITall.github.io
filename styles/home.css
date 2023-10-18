@@ -5,13 +5,11 @@
 }
 
 
-#content main {
-    
+#textContainer {
+    text-shadow: 2px 2px 4px #000000;
 }
 
-#content footer {
-    height: 10vh;
-}
+
 
 /* #formCard {
     display: flex;
