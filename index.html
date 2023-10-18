@@ -48,21 +48,26 @@
         
         
     </head>
-    <body class="bg-[#FFEF61]">
+    <body class="bg-[#164B7D]">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="content" class="flex flex-col relative h-full w-full">
-            <header class="md:items-center md:content-center h-[50px] md:h-[4vh]">
-                
-                <nav class="flex flex-row md:items-center md:justify-center h-full [&>*]:md:mx-4 [&>*]:text-2xl bg-[#164B7D] text-[#FFFAFA] ">
-                    <!-- <img src="./images/icon.png" class="h-[75px]"> -->
-                    <a class="uppercase cursor-pointer">Home</a>
-                    <a href="./pages/about.html" class="uppercase">About</a>
-                    <a href="./pages/contactUs.html" class="uppercase">Contact Us</a>
-                    <a href="./pages/gallery.html" class="uppercase">Gallery</a>
-                    <a href="https://computerscience.tcnj.edu/" class="uppercase">CS Department</a>
-                </nav>
+            <header class="h-[100px] md:h-[10vh] w-full">
+                <div class="flex md:justify-center md:items-center h-full">
+                    <nav class="flex flex-row md:items-center md:justify-between bg-[#FFFAFA] md:w-[1000px] md:px-8">
+                        <div id="iconContainer">
+                            <img src="./images/icon2.png" class="h-[80px]">
+                        </div>
+                        <div id="linkContainer" class="[&>*]:md:mx-4 [&>*]:text-2xl text-orange-300">
+                            <a class="text-[#2D7CC8] uppercase font-bold border-b-2 border-[#2D7CC8]">Home</a>
+                            <a href="./pages/members.html" class="uppercase text-[#164B7D]">Members</a>
+                            <a href="./pages/contactUs.html" class="uppercase text-[#164B7D]">Contact Us</a>
+                            <a href="./pages/gallery.html" class="uppercase text-[#164B7D]">Gallery</a>
+                            <a href="https://computerscience.tcnj.edu/" class="uppercase text-[#164B7D]">CS Department</a>
+                        </div>
+                    </nav>
+                </div>
             </header>
             <main class="md:h-[87vh] flex flex-col justify-center items-center space-y-[80px]">
                 <section id="detailsCard" class="flex px-[5vw] h-[90%] md:h-[60%] bg-[#FFFAFA] w-[75vw] md:w-[1250px] flex-col-reverse md:flex-row border-solid border-[3px] border-[#164B7D] space-x-[40px] shadow-[3px_3px_20px_0_rgba(0,0,0,0.3)]">
@@ -109,9 +114,6 @@
                     </div>
                 </form>
             </main>
-            <div class="relative">
-                <img src="./images/icon.png" class=" absolute h-[75px] bottom-0" >
-            </div>
         </div>
         <script src="" async defer></script>
     </body>
