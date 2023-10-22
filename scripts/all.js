@@ -1,3 +1,5 @@
+const { link } = require("mz/fs");
+
 function myMenu(){
     const nav = document.getElementById("navbar")
     const links = document.getElementById("linkContainer2")
@@ -5,10 +7,12 @@ function myMenu(){
     if(links.style.display === "none"){
         nav.style.borderBottom = "solid 3px #164B7D";
         links.style.display = "flex"
+        links.style.zIndex = 2
         links.style.flexDirection = "column"
     } else {
         nav.style.borderBottom = "none";
         nav.style.flexDirection = "row"
+        links.style.zIndex = 0
         links.style.display = "none"
         links.style.flexDirection = "row"
     }

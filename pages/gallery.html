@@ -26,17 +26,17 @@
         <!-- If you wish to share this webpage on social media, uncomment this HTML Section, and update the content attributes -->
 
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="TCNJ DIGIT.all | Home">
+        <meta name="twitter:title" content="TCNJ DIGIT.all | Gallery">
         <meta name="twitter:description" content="DIGIT.all (Diversity &amp; Inclusion Group In Tech for All) is committed to making the tech community a space that is welcome to all. By providing the TCNJ community with accessible workshops and a space for guest speakers and peers alike to discuss their experiences in and around tech and tech culture, DIGIT.all seeks to promote diversity, inclusion, allyship, and awareness in STEM.">
-        <meta name="twitter:image" content="https://www.tcnj.edu/~wics/img/icon.png">
-        <meta name="twitter:image:src" content="https://www.tcnj.edu/~wics/img/icon.png">
+        <meta name="twitter:image" content=""> <!-- ADD -->
+        <meta name="twitter:image:src" content=""> <!-- ADD -->
 
         <meta property="og:title" content="TCNJ DIGIT.all | Gallery">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://www.tcnj.edu/~wics/index.hbs">
-        <meta property="og:image" content="https://www.tcnj.edu/~wics/img/icon.png">
+        <meta property="og:url" content=""> <!-- ADD -->
+        <meta property="og:image" content=""> <!-- ADD -->
         <meta property="og:description" content="DIGIT.all (Diversity &amp; Inclusion Group In Tech for All) is committed to making the tech community a space that is welcome to all. By providing the TCNJ community with accessible workshops and a space for guest speakers and peers alike to discuss their experiences in and around tech and tech culture, DIGIT.all seeks to promote diversity, inclusion, allyship, and awareness in STEM.">
-        <meta property="og:site_name" content="TCNJ DIGIT.all | Home">
+        <meta property="og:site_name" content="TCNJ DIGIT.all | Gallery">
 
         <!-- Include your CSS files here -->
         <link rel="stylesheet" href="../styles/all.css">
@@ -44,20 +44,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&family=Share+Tech&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
-        <script src="" async defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <script src="../scripts/all.js" defer></script>
     </head>
     <body class="bg-[#164B7D]">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="content" class="flex flex-col relative h-full w-full">
-            <header class="h-[100px] md:h-[10vh] w-full">
-                <div class="flex md:justify-center md:items-end h-full">
-                    <nav class="flex flex-row md:items-center md:justify-between bg-[#FFFAFA] md:w-[1000px] md:px-8 md:shadow-[8px_8px_20px_0_rgba(0,0,0,0.3)]">
-                        <div id="iconContainer">
+            <header id="header" class="h-[100px] md:h-[10vh] w-full z-10">
+                <div class="flex flex-col md:flex-row md:justify-center items-start md:items-end w-full h-full">
+                    <nav id="navbar" class="flex flex-row items-center justify-between bg-[#FFFAFA] w-full md:w-[1000px] md:shadow-[8px_8px_20px_0_rgba(0,0,0,0.3)]">
+                        <div id="iconContainer" class="pl-[18px]">
                             <img src="../images/icon2.png" class="h-[80px]">
                         </div>
-                        <div id="linkContainer" class="[&>*]:md:mx-4 [&>*]:text-2xl [&>*]:select-none">
+                        <a href="javascript:void(0);" id="hamburgerMenu" class="md:hidden pr-[18px]" onclick="myMenu()">
+                            <i class="fa fa-bars text-[#164B7D]"></i>
+                        </a>
+                        <div id="linkContainer" class="hidden md:block [&>*]:md:mx-2 [&>*]:text-2xl [&>*]:select-none pr-[18px]">
                             <a href="../index.html" class="uppercase text-[#164B7D]">Home</a>
                             <a href="./members.html" class="uppercase text-[#164B7D]">Members</a>
                             <a href="./contactUs.html" class="uppercase text-[#164B7D]">Contact Us</a>
@@ -65,6 +70,13 @@
                             <a href="https://computerscience.tcnj.edu/" class="uppercase text-[#164B7D]">CS Department</a>
                         </div>
                     </nav>
+                    <div id="linkContainer2" class="hidden [&>*]:md:mx-2 [&>*]:text-2xl [&>*]:select-none w-[100vw]">
+                        <a href="../index.html" class="uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Home</a>
+                        <a href="./members.html" class="uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Members</a>
+                        <a href="./contactUs.html" class="uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Contact Us</a>
+                        <a href="./gallery.html" class="text-[#2D7CC8] uppercase w-full font-bold border-b-2 border-[#2D7CC8] bg-[#fffafaf2] text-center">Gallery</a>
+                        <a href="https://computerscience.tcnj.edu/" class="uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">CS Department</a>
+                    </div>
                 </div>
             </header>
             <main>
