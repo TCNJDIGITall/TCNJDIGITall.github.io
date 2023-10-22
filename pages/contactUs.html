@@ -31,7 +31,7 @@
         <meta name="twitter:image" content="https://www.tcnj.edu/~wics/img/icon.png">
         <meta name="twitter:image:src" content="https://www.tcnj.edu/~wics/img/icon.png">
 
-        <meta property="og:title" content="TCNJ DIGIT.all | Home">
+        <meta property="og:title" content="TCNJ DIGIT.all | Contact Us">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://www.tcnj.edu/~wics/index.hbs">
         <meta property="og:image" content="https://www.tcnj.edu/~wics/img/icon.png">
@@ -39,31 +39,37 @@
         <meta property="og:site_name" content="TCNJ DIGIT.all | Home">
 
         <!-- Include your CSS files here -->
-        <link rel="stylesheet" href="">
-        
-        
+        <link rel="stylesheet" href="../styles/all.css">
+        <link href="/dist/output.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&family=Share+Tech&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <script src="" async defer></script>
     </head>
-    <body>
+    <body class="bg-[#164B7D]">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="content">
-            <header>
-                <nav>
-                    <a href="../index.html">Home</a>
-                    <a href="./members.html">Members</a>
-                    <a href="">Contact Us</a>
-                    <a href="./gallery.html">Gallery</a>
-                    <a href="https://computerscience.tcnj.edu/">CS Department</a>
-                </nav>
+        <div id="content" class="flex flex-col relative h-full w-full">
+            <header class="h-[100px] md:h-[10vh] w-full">
+                <div class="flex md:justify-center md:items-end h-full">
+                    <nav class="flex flex-row md:items-center md:justify-between bg-[#FFFAFA] md:w-[1000px] md:px-8 md:shadow-[8px_8px_20px_0_rgba(0,0,0,0.3)]">
+                        <div id="iconContainer">
+                            <img src="../images/icon2.png" class="h-[80px]">
+                        </div>
+                        <div id="linkContainer" class="[&>*]:md:mx-4 [&>*]:text-2xl [&>*]:select-none">
+                            <a href="../index.html" class="uppercase text-[#164B7D]">Home</a>
+                            <a href="./members.html" class="uppercase text-[#164B7D]">Members</a>
+                            <a class="text-[#2D7CC8] uppercase font-bold border-b-2 border-[#2D7CC8] cursor-pointer">Contact Us</a>
+                            <a href="./gallery.html" class="uppercase text-[#164B7D]">Gallery</a>
+                            <a href="https://computerscience.tcnj.edu/" class="uppercase text-[#164B7D]">CS Department</a>
+                        </div>
+                    </nav>
+                </div>
             </header>
             <main>
     
             </main>
-            <footer>
-    
-            </footer>
         </div>
-        <script src="" async defer></script>
     </body>
 </html>
