@@ -40,6 +40,7 @@
 
         <!-- Include your CSS files here -->
         <link rel="stylesheet" href="../styles/all.css">
+        <link rel="stylesheet" href="../styles/members.css">
         <link href="/dist/output.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +58,7 @@
                 <div class="flex flex-col md:flex-row md:justify-center items-start md:items-end w-full h-full">
                     <nav id="navbar" class="flex flex-row items-center justify-between bg-[#FFFAFA] w-full md:w-[1000px] md:shadow-[8px_8px_20px_0_rgba(0,0,0,0.3)]">
                         <div id="iconContainer" class="pl-[18px]">
-                            <img src="../images/icon2.png" class="h-[80px]">
+                            <img src="../images/icon2.png" class="h-[70px] md:h-[80px]">
                         </div>
                         <a href="javascript:void(0);" id="hamburgerMenu" class="md:hidden pr-[18px]" onclick="myMenu()">
                             <i class="fa fa-bars text-[#164B7D]"></i>
@@ -80,60 +81,61 @@
                 </div>
             </header>
             <main class="flex justify-center items-center w-full h-full md:my-8">
-                <section id="membersContainer" class="md:w-[1300px] md:h-[2800px] bg-[#E4EBF3] border-[8px] border-[#F3FF3D] flex justify-center items-center">
-                    <div class="md:w-[90%] md:h-full flex flex-col">
-                        <div id="membersSect0" class="flex justify-around items-center md:h-[725px] md:w-full">
-                            <div id="memberCard0" class="md:w-[450px] md:h-[625px] bg-[#ffffff] md:shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
+                <section id="membersContainer" class="w-[400px] md:w-[1300px] h-[4150px] md:h-[3050px] bg-[#E4EBF3] border-[8px] border-[#F3FF3D] flex flex-col justify-center items-center">
+                    <h2 class="text-4xl md:text-6xl">Executive Board</h2>
+                    <div class="md:w-[90%] md:h-max flex flex-col">
+                        <div id="membersSect0" class="flex flex-col md:flex-row justify-around items-center h-[1000px] md:h-[725px] md:w-full">
+                            <div id="memberCard0" class="w-[300px] md:w-[450px] h-[475px] md:h-[625px] bg-[#ffffff] shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
                                 <div class="w-full h-[67%] flex items-center justify-center">
                                     <div id="imgContainer0" class="w-[90%] h-[90%]">
                                         <img src="../images/members/sara-aly.jpg" class="w-full h-full object-cover">
                                     </div>
                                 </div>
-                                <div id="memberDetailsContainer0" class="w-[full] h-[33%] flex justify-center">
+                                <div id="memberDetailsContainer0" class="w-full h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Sara Aly</h3>
-                                        <h4 class="pl-[5px] text-2xl text-[#9D9EA1]">President</h4>
+                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Sara Aly</h3>
+                                        <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">President</h4>
                                         <div class="w-[70%] pl-[5px]">
-                                            <p>Major: Computer Science <br>Minors: Women's Gender and Sexuality Studies, Management</p>
+                                            <p class="text-sm md:text-xl">Major: Computer Science <br>Minors: Women's Gender and Sexuality Studies, Management</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="memberCard1" class="md:w-[450px] md:h-[625px] bg-[#ffffff] md:shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
+                            <div id="memberCard1" class="w-[300px] md:w-[450px] h-[475px] md:h-[625px] bg-[#ffffff] shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
                                 <div class="w-full h-[67%] flex items-center justify-center">
                                     <div id="imgContainer1" class="w-[90%] h-[90%]">
                                         <img src="../images/members/Parvathi2.png" class="w-full h-full object-cover">
                                     </div>
                                 </div>
-                                <div id="memberDetailsContainer1" class="w-[full] h-[33%] flex justify-center">
+                                <div id="memberDetailsContainer1" class="w-full h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Parvathi Krishnan</h3>
-                                        <h4 class="pl-[5px] text-2xl text-[#9D9EA1]">Vice-President</h4>
+                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Parvathi Krishnan</h3>
+                                        <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Vice-President</h4>
                                         <div class="w-[70%] pl-[5px]">
-                                            <p>Major: Computer Science</p>
+                                            <p class="text-md md:text-2xl">Major: Computer Science</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="membersSect1" class="flex justify-around items-center md:h-[725px] md:w-full">
-                            <div id="memberCard2" class="md:w-[450px] md:h-[625px] bg-[#ffffff] md:shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
+                        <div id="membersSect1" class="flex flex-col md:flex-row justify-around items-center h-[1000px] md:h-[725px] md:w-full">
+                            <div id="memberCard2" class="w-[300px] md:w-[450px] h-[475px] md:h-[625px] bg-[#ffffff] shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
                                 <div class="w-full h-[67%] flex items-center justify-center">
                                     <div id="imgContainer2" class="w-[90%] h-[90%]">
                                         <img src="../images/members/AndrewMichaelHeadshot.jpg" class="w-full h-full object-cover">
                                     </div>
                                 </div>
-                                <div id="memberDetailsContainer2" class="w-[full] h-[33%] flex justify-center">
+                                <div id="memberDetailsContainer2" class="w-full h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Andrew Michael</h3>
-                                        <h4 class="pl-[5px] text-2xl text-[#9D9EA1]">Treasurer</h4>
+                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Andrew Michael</h3>
+                                        <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Treasurer</h4>
                                         <div class="w-[70%] pl-[5px]">
-                                            <p>Major: Computer Science <br>Minors: Mathematics</p>
+                                            <p class="text-sm md:text-xl">Major: Computer Science <br>Minor: Mathematics</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="memberCard3" class="md:w-[450px] md:h-[625px] bg-[#ffffff] md:shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
+                            <div id="memberCard3" class="w-[300px] md:w-[450px] h-[475px] md:h-[625px] bg-[#ffffff] shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
                                 <div class="w-full h-[67%] flex items-center justify-center">
                                     <div id="imgContainer3" class="w-[90%] h-[90%]">
                                         <img src="../images/members/BenjaminGuerrieroHeadshot.JPEG" class="w-full h-full object-cover">
@@ -141,17 +143,17 @@
                                 </div>
                                 <div id="memberDetailsContainer3" class="w-[full] h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Benjamin Guerrieri</h3>
-                                        <h4 class="pl-[5px] text-2xl text-[#9D9EA1]">Secretary</h4>
+                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Benjamin Guerrieri</h3>
+                                        <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Secretary</h4>
                                         <div class="w-[70%] pl-[5px]">
-                                            <p>Major: Computer Science <br>Minor: Statistics</p>
+                                            <p class="text-sm md:text-xl">Major: Computer Science <br>Minor: Statistics</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="membersSect2" class="flex justify-around items-center md:h-[725px] md:w-full">
-                            <div id="memberCard4" class="md:w-[450px] md:h-[625px] bg-[#ffffff] md:shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
+                        <div id="membersSect2" class="flex flex-col md:flex-row justify-around items-center h-[1000px] md:h-[725px] md:w-full">
+                            <div id="memberCard4" class="w-[300px] md:w-[450px] h-[475px] md:h-[625px] bg-[#ffffff] shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
                                 <div class="w-full h-[67%] flex items-center justify-center">
                                     <div id="imgContainer4" class="w-[90%] h-[90%]">
                                         <img src="../images/members/HaemahAkhtar.png" class="w-full h-full object-cover">
@@ -159,15 +161,15 @@
                                 </div>
                                 <div id="memberDetailsContainer4" class="w-[full] h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Haemah Akhtar</h3>
-                                        <h4 class="pl-[5px] text-2xl text-[#9D9EA1]">Social Media Manager</h4>
+                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Haemah Akhtar</h3>
+                                        <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Social Media Manager</h4>
                                         <div class="w-[70%] pl-[5px]">
-                                            <p>Major: Computer Science <br>Minors: IMM</p>
+                                            <p class="text-sm md:text-xl">Major: Computer Science <br>Minor: IMM</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="memberCard5" class="md:w-[450px] md:h-[625px] bg-[#ffffff] md:shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
+                            <div id="memberCard5" class="w-[300px] md:w-[450px] h-[475px] md:h-[625px] bg-[#ffffff] shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
                                 <div class="w-full h-[67%] flex items-center justify-center">
                                     <div id="imgContainer5" class="w-[90%] h-[90%]">
                                         <img src="../images/members/StennethSwabyHeadshot.jpg" class="w-full h-full object-cover">
@@ -175,17 +177,17 @@
                                 </div>
                                 <div id="memberDetailsContainer5" class="w-[full] h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Stenneth Swaby</h3>
-                                        <h4 class="pl-[5px] text-2xl text-[#9D9EA1]">Outreach Manager</h4>
+                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Stenneth Swaby</h3>
+                                        <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Outreach Manager</h4>
                                         <div class="w-[70%] pl-[5px]">
-                                            <p>Major: Computer Science <br>Minor: Chinese</p>
+                                            <p class="text-sm md:text-xl">Major: Computer Science <br>Minor: Chinese</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div id="membersSect3" class="flex justify-around items-center md:h-[725px] md:w-full">
-                            <div id="memberCard6" class="md:w-[450px] md:h-[625px] bg-[#ffffff] md:shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
+                        <div id="membersSect3" class="flex flex-col md:flex-row justify-around items-center h-[1000px] md:h-[725px] md:w-full">
+                            <div id="memberCard6" class="w-[300px] md:w-[450px] h-[475px] md:h-[625px] bg-[#ffffff] shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
                                 <div class="w-full h-[67%] flex items-center justify-center">
                                     <div id="imgContainer6" class="w-[90%] h-[90%]">
                                         <img src="../images/members/SpandanaBondalapati3.png" class="w-full h-full object-cover">
@@ -193,15 +195,15 @@
                                 </div>
                                 <div id="memberDetailsContainer6" class="w-[full] h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Spandana Bondalapati</h3>
-                                        <h4 class="pl-[5px] text-2xl text-[#9D9EA1]">Outreach Manager</h4>
+                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Spandana Bondalapati</h3>
+                                        <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Outreach Manager</h4>
                                         <div class="w-[70%] pl-[5px]">
-                                            <p>Major: Computer Science <br>Minors: Marketing</p>
+                                            <p class="text-sm md:text-xl">Major: Computer Science <br>Minor: Marketing</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="memberCard7" class="md:w-[450px] md:h-[625px] bg-[#ffffff] md:shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
+                            <div id="memberCard7" class="w-[300px] md:w-[450px] h-[475px] md:h-[625px] bg-[#ffffff] shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
                                 <div class="w-full h-[67%] flex items-center justify-center">
                                     <div id="imgContainer7" class="w-[90%] h-[90%]">
                                         <img src="../images/members/eden.jpg" class="w-full h-full object-cover">
@@ -209,10 +211,10 @@
                                 </div>
                                 <div id="memberDetailsContainer7" class="w-[full] h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Eden Espinosa</h3>
-                                        <h4 class="pl-[5px] text-2xl text-[#9D9EA1]">Events Coordinator</h4>
+                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Eden Espinosa</h3>
+                                        <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Events Coordinator</h4>
                                         <div class="w-[70%] pl-[5px]">
-                                            <p>Major: Computer Science</p>
+                                            <p class="text-md md:text-2xl">Major: Computer Science</p>
                                         </div>
                                     </div>
                                 </div>
