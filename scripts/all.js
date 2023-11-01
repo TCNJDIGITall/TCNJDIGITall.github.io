@@ -1,5 +1,3 @@
-const { link } = require("mz/fs");
-
 function myMenu(){
     const nav = document.getElementById("navbar")
     const links = document.getElementById("linkContainer2")
@@ -16,10 +14,6 @@ function myMenu(){
         links.style.display = "none"
         links.style.flexDirection = "row"
     }
-
-}
-
-function myMenuClose(){
 
 }
 

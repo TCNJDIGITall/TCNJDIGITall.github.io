@@ -54,6 +54,10 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <div id="backgroundImg" class="h-full w-full">
+            <img src="../images/background.jpg" alt="" class="h-[100vh] w-[100vw] object-cover opacity-[.75]">
+        </div>
         <div id="content" class="flex flex-col relative h-full w-full">
             <header id="header" class="h-[100px] md:h-[10vh] w-full">
                 <div class="flex flex-col md:flex-row md:justify-center items-start md:items-end w-full h-full">
@@ -82,8 +86,8 @@
                 </div>
             </header>
             <main class="flex justify-center items-center w-full h-full md:my-8">
-                <section id="membersContainer" class="w-[400px] md:w-[1300px] h-[4150px] md:h-[3050px] bg-[#E4EBF3] border-[8px] border-[#F3FF3D] flex flex-col justify-center items-center">
-                    <h2 class="text-4xl md:text-6xl">Executive Board</h2>
+                <section id="membersContainer" class="w-[95%] md:w-[1300px] h-[4150px] md:h-[3050px] bg-[#e4ebf3cc] border-[8px] border-[#FDD700] flex flex-col justify-center items-center">
+                    <h2 id="contentHeader" class="text-4xl md:text-7xl "><span class="max-w-fit border-b-[4px] border-[#164B7D]">Executive Board</span></h2>
                     <div class="md:w-[90%] md:h-max flex flex-col">
                         <div id="membersSect0" class="flex flex-col md:flex-row justify-around items-center h-[1000px] md:h-[725px] md:w-full">
                             <div id="memberCard0" class="w-[300px] md:w-[450px] h-[475px] md:h-[625px] bg-[#ffffff] shadow-[0px_4px_8px_0_rgba(0,0,0,0.3)]">
@@ -94,7 +98,7 @@
                                 </div>
                                 <div id="memberDetailsContainer0" class="w-full h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Sara Aly</h3>
+                                        <a href="https://www.linkedin.com/in/sara-aly/" class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D] hover:text-[#ffd651]">Sara Aly</a>
                                         <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">President</h4>
                                         <div class="w-[70%] pl-[5px]">
                                             <p class="text-sm md:text-xl">Major: Computer Science <br>Minors: Women's Gender and Sexuality Studies, Management</p>
@@ -110,7 +114,7 @@
                                 </div>
                                 <div id="memberDetailsContainer1" class="w-full h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Parvathi Krishnan</h3>
+                                        <a href="https://www.linkedin.com/in/parvathi-krishnan-991309222/" class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D] hover:text-[#ffd651]">Parvathi Krishnan</a>
                                         <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Vice-President</h4>
                                         <div class="w-[70%] pl-[5px]">
                                             <p class="text-md md:text-2xl">Major: Computer Science</p>
@@ -128,7 +132,7 @@
                                 </div>
                                 <div id="memberDetailsContainer2" class="w-full h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Andrew Michael</h3>
+                                        <a href="https://www.linkedin.com/in/andrew-r-michael/" class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1]  text-[#164B7D] hover:text-[#ffd651]">Andrew Michael</a>
                                         <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Treasurer</h4>
                                         <div class="w-[70%] pl-[5px]">
                                             <p class="text-sm md:text-xl">Major: Computer Science <br>Minor: Mathematics</p>
@@ -144,7 +148,7 @@
                                 </div>
                                 <div id="memberDetailsContainer3" class="w-[full] h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Benjamin Guerrieri</h3>
+                                        <a href="https://www.linkedin.com/in/benjaminguerrieri/" class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1]  text-[#164B7D] hover:text-[#ffd651]">Benjamin Guerrieri</a>
                                         <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Secretary</h4>
                                         <div class="w-[70%] pl-[5px]">
                                             <p class="text-sm md:text-xl">Major: Computer Science <br>Minor: Statistics</p>
@@ -162,7 +166,7 @@
                                 </div>
                                 <div id="memberDetailsContainer4" class="w-[full] h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Haemah Akhtar</h3>
+                                        <a href="https://www.linkedin.com/in/haemah-akhtar-0543b7210/" class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1]  text-[#164B7D] hover:text-[#ffd651]">Haemah Akhtar</a>
                                         <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Social Media Manager</h4>
                                         <div class="w-[70%] pl-[5px]">
                                             <p class="text-sm md:text-xl">Major: Computer Science <br>Minor: IMM</p>
@@ -178,7 +182,7 @@
                                 </div>
                                 <div id="memberDetailsContainer5" class="w-[full] h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Stenneth Swaby</h3>
+                                        <a href="https://www.linkedin.com/in/stenneth-swaby/" class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1]  text-[#164B7D] hover:text-[#ffd651]">Stenneth Swaby</a>
                                         <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Outreach Manager</h4>
                                         <div class="w-[70%] pl-[5px]">
                                             <p class="text-sm md:text-xl">Major: Computer Science <br>Minor: Chinese</p>
@@ -196,7 +200,7 @@
                                 </div>
                                 <div id="memberDetailsContainer6" class="w-[full] h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Spandana Bondalapati</h3>
+                                        <a href="https://www.linkedin.com/in/spandana-bondalapati/" class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1]  text-[#164B7D] hover:text-[#ffd651]">Spandana Bondalapati</a>
                                         <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Outreach Manager</h4>
                                         <div class="w-[70%] pl-[5px]">
                                             <p class="text-sm md:text-xl">Major: Computer Science <br>Minor: Marketing</p>
@@ -212,7 +216,7 @@
                                 </div>
                                 <div id="memberDetailsContainer7" class="w-[full] h-[33%] flex justify-center">
                                     <div class="w-[90%] flex flex-col [&>*]:mb-[10px]">
-                                        <h3 class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1] text-[#164B7D]">Eden Espinosa</h3>
+                                        <a href="https://www.linkedin.com/in/eden-espinosa/" class="pl-[5px] text-2xl md:text-3xl border-l-[4px] border[#f1f1f1]  text-[#164B7D] hover:text-[#ffd651]">Eden Espinosa</a>
                                         <h4 class="pl-[5px] text-xl md:text-2xl text-[#9D9EA1]">Events Coordinator</h4>
                                         <div class="w-[70%] pl-[5px]">
                                             <p class="text-md md:text-2xl">Major: Computer Science</p>
