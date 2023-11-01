@@ -97,11 +97,11 @@
                         
                     </div>
                 </section>
-                <div id="mailingContainer" class="hidden md:absolute w-full md:h-[12%] md:flex justify-center items-end">
+                <div id="mailingFormContainerBackground" onclick="closeMailingForm()" class="fixed w-full h-full bg-[#000000] opacity-[0.5] top-0 left-0 hidden"></div>
+                <div id="mailingContainer" class="hidden md:absolute w-full md:h-[12%] md:flex justify-center items-center">
                     <div id="joinButton" class="flex flex-col justify-center items-center">
-                        <button id="button" onclick="openMailingForm()" class="text-3xl w-fit font-medium bg-[#FFFAFA] px-[45px] py-[15px] rounded-t-lg border-black border-t-[3px] border-l-[3px] border-r-[3px]">Join Our <span class="text-[#464E7D]">Mailing List!</span></button>
-                        <div id="mailingFormContainerBackground" onclick="closeMailingForm()" class="fixed w-full h-full bg-[#000000] opacity-[0.5] top-0 left-0 hidden"></div>
-                        <div id="mailingFormContainer" class="md:w-[500px] md:h-[500px] bg-[#464E7D] hidden  rounded-t-lg border-black border-t-[2px] border-l-[2px] border-r-[2px]">
+                        <button id="button" onclick="openMailingForm()" class="text-3xl w-fit font-medium bg-[#FFFAFA] px-[45px] py-[15px] md:shadow-[8px_8px_14px_0_rgba(0,0,0,0.3)] border-[4px] border-[#464E7D] ">Join Our <span class="text-[#464E7D]">Mailing List!</span></button>
+                        <div id="mailingFormContainer" class="md:w-[500px] md:h-[500px] bg-[#464E7D] hidden md:shadow-[8px_8px_14px_0_rgba(0,0,0,0.3)] border-[2px] border-[#FFFAFA]">
                             <form class="flex h-full justify-center items-center">
                                 <div class="w-[90%] h-[90%]">
                                     <div id="infoSection" class="h-[80%] flex flex-col justify-around">
