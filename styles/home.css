@@ -28,7 +28,7 @@ body {
     }
 }
 
-@keyframes slide{
+@keyframes slide-up{
     0% {
         transform: translateY(100%);
     }
@@ -38,19 +38,41 @@ body {
     }
 }
 
+@keyframes slide-down{
+    0% {
+        transform: translateY(-3%);
+    }
+
+    100% {
+        transform: translateY(175%);
+    }
+}
+
 @keyframes fade-in {
     0% {
         opacity: 0%;
     }
 
     100% {
-        opacity: 50%;
+        opacity: 65%;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 65%;
+    }
+
+    100% {
+        opacity: 0%;
     }
 }
 
 #button {
-    animation: bounce 5s infinite;
+    animation: bounce 3s infinite;
 }
+
+
 
 
 

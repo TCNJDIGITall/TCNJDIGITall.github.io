@@ -6,3 +6,17 @@ body {
     -ms-overflow-style: none;
   scrollbar-width: none; 
 }
+
+#backgroundSkewContainer{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  position: fixed;
+}
+
+#membersContainer a:hover {
+  transition: ease-in .3s ;
+}
+
+#membersContainer a {
+  transition: ease-out .3s ;
+}
