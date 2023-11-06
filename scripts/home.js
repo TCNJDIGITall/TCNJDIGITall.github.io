@@ -56,4 +56,8 @@ async function closeMailingForm(){
     
 }
 
+addEventListener("submit", function() {
+    
+    location.reload();
+})
 
