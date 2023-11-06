@@ -99,35 +99,36 @@
                     <div id="joinButton" class="flex flex-col justify-center items-center">
                         <button id="button" onclick="openMailingForm()" class="text-3xl w-fit font-medium bg-[#FFFAFA] px-[45px] py-[15px] md:shadow-[8px_8px_14px_0_rgba(0,0,0,0.3)] border-[4px] border-[#164B7D] ">Join Our <span class="text-[#164B7D]">Mailing List!</span></button>
                         <div id="mailingFormContainer" class="md:w-[500px] md:h-[500px] bg-[#164B7D] hidden md:shadow-[8px_8px_14px_0_rgba(0,0,0,0.3)] border-[2px] border-[#FFFAFA]">
-                            <form action="https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7" method="POST" class="flex h-full justify-center items-center">
+                            <iframe name="hiddenFrame" class="hidden"></iframe>
+                            <form action="https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7" method="POST" target="hiddenFrame" class="flex h-full justify-center items-center">
                                 <div class="w-[90%] h-[90%]">
                                     <div id="infoSection" class="h-[80%] flex flex-col justify-around">
                                         <div id="infoName" class="flex justify-around">
                                             <div id="firstNameSection" class="flex flex-col">
                                                 <label for="firstName" class="md:text-2xl text-[#FFFAFA]">First Name</label>
-                                                <input type="text" id="firstName" title="firstName" class="text-xl"/>
+                                                <input type="text" name="FNAME" id="firstName" title="firstName" class="text-xl"/>
                                             </div>
                                             <div id="lastNameSection" class="flex flex-col">
                                                 <label for="lastName" class="md:text-2xl text-[#FFFAFA]">Last Name</label>
-                                                <input type="text" id="lastName" title="lastName" class="text-xl"/>
+                                                <input type="text" name="LNAME" id="lastName" title="lastName" class="text-xl"/>
                                             </div>
                                         </div>
                                         <div id="emailSection" class="flex justify-center items-center">
                                             <div class="flex flex-col w-[95%]">
                                                 <label class="md:text-2xl text-[#FFFAFA]">Email</label>
-                                                    <input type="text" id="email" class="text-xl"/>
+                                                    <input type="text" name="EMAIL" id="email" class="text-xl"/>
                                             </div>
                                         </div>
                                         <div id="majorSection" class="flex flex-col justify-center items-center">
                                             <div class="flex flex-col w-[95%]">
                                                 <label class="md:text-2xl text-[#FFFAFA]">Major</label>
-                                                <input type="text" id="major" class="text-xl"/>
+                                                <input type="text" name="MAJOR" id="major" class="text-xl"/>
                                             </div>
                                         </div>
                                         <div id="yearSection" class="flex flex-col justify-center items-center">
                                             <div class="flex flex-col w-[95%]">
                                                 <label class="md:text-2xl text-[#FFFAFA]">Graduation Year</label>
-                                                <input type="text" id="major" class="text-xl"/>
+                                                <input type="number" name="YEAR" id="major" class="text-xl"/>
                                             </div>
                                             
                                         </div>
@@ -144,39 +145,37 @@
                     <div class="bg-[#FFFAFA] w-full h-[10%] flex justify-center items-center">
                         <h2 class="text-xl">Join Our <span class="text-[#164B7D]">Mailing List!</span></h2>
                     </div>
-                    <form action="https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7" method="POST" class="flex h-[90%] justify-center items-center">
+                    <form action="https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7" target="hiddenFrame" method="POST" class="flex h-[90%] justify-center items-center">
                         <div class="w-[90%] h-[90%]">
                             <div id="infoSection" class="h-[80%] flex flex-col justify-around">
                                 <div id="firstNameSection" class="flex justify-center items-center">
                                     <div class="flex flex-col w-[95%]">
                                         <label for="firstName" class="text-xl md:text-2xl text-[#FFFAFA]">First Name</label>
-                                        <input type="text" id="firstName" title="firstName" class="text-lg md:text-xl"/>
+                                        <input type="text" id="firstName" title="firstName" name="FNAME" class="text-lg md:text-xl"/>
                                     </div>
                                 </div>
                                 <div id="lastNameSection" class="flex justify-center items-center">
                                     <div class="flex flex-col w-[95%]">
                                         <label for="lastName" class="text-xl md:text-2xl text-[#FFFAFA]">Last Name</label>
-                                        <input type="text" id="lastName" title="lastName" class="text-lg md:text-xl"/>
-                                    </div>
-                                    
-
+                                        <input type="text" id="lastName" name="LNAME" title="lastName" class="text-lg md:text-xl"/>
+                                    </div>                                    
                                 </div>
                                 <div id="emailSection" class="flex justify-center items-center">
                                     <div class="flex flex-col w-[95%]">
                                         <label class="text-xl md:text-2xl text-[#FFFAFA]">Email</label>
-                                        <input type="text" id="email" class="text-lg md:text-xl"/>
+                                        <input type="text" name="EMAIL" id="email" class="text-lg md:text-xl"/>
                                     </div>
                                 </div>
                                 <div id="majorSection" class="flex flex-col justify-center items-center">
                                     <div class="flex flex-col w-[95%]">
                                         <label class="text-xl md:text-2xl text-[#FFFAFA]">Major</label>
-                                        <input type="text" id="major" class="text-lg md:text-xl"/>
+                                        <input type="text" name="MAJOR" id="major" class="text-lg md:text-xl"/>
                                     </div>
                                 </div>
                                 <div id="yearSection" class="flex flex-col justify-center items-center">
                                     <div class="flex flex-col w-[95%]">
                                         <label class="text-xl md:text-2xl text-[#FFFAFA]">Graduation Year</label>
-                                        <input type="text" id="major" class="text-lg md:text-xl"/>
+                                        <input type="number" name="YEAR" id="major" class="text-lg md:text-xl"/>
                                     </div>
                                     
                                 </div>
