@@ -30,8 +30,8 @@ async function openMailingForm(){
             button.style.zIndex = 0;
             button.style.marginBottom = "0px";
             formContainer.style.marginBottom = "0px";
-            formContainer.style.display = "none";
             formContainerBg.style.display = "none";
+            formContainer.style.display = "none";
             button.style.animation = "bounce 3s infinite";
         }, 500);
     }
