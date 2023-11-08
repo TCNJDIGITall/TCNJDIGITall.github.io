@@ -3,7 +3,9 @@ var button = document.getElementById("button");
 var mailingFormContainer = document.getElementById("mailingContainer")
 var formContainer = document.getElementById("mailingFormContainer");
 var formContainerBg = document.getElementById("mailingFormContainerBackground");
+var successMessage = document.getElementById("successfulSubmitContainer")
 formContainer.style.display = "none"
+
 
 
 async function openMailingForm(){
@@ -57,7 +59,20 @@ async function closeMailingForm(){
 }
 
 addEventListener("submit", function() {
+    if(windowWidth > 767){
+        successMessage.style.display = "block"
+        successMessage.style.animation = "slide-right 1.5s"
+        setTimeout(function(){
+            location.reload();
+        }, 3000)
+    }
     
-    location.reload();
+    
 })
 
+
+window.addEventListener("resize", () => {
+    if (windowWidth < 768){
+        closeMailingForm();
+    }
+})

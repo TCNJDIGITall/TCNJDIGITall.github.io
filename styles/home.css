@@ -9,6 +9,7 @@
     }
 }
 
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(-25%);
@@ -27,17 +28,17 @@
     }
 
     100% {
-        transform: translateY(-3%);
+        transform: translateY(0%);
     }
 }
 
 @keyframes slide-down{
     0% {
-        transform: translateY(-3%);
+        transform: translateY(0%);
     }
 
     100% {
-        transform: translateY(175%);
+        transform: translateY(200%);
     }
 }
 
@@ -58,6 +59,16 @@
 
     100% {
         opacity: 0%;
+    }
+}
+
+@keyframes slide-right {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0%);
     }
 }
 

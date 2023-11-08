@@ -95,12 +95,16 @@
                     </div>
                 </section>
                 <div id="mailingFormContainerBackground" onclick="closeMailingForm()" class="fixed w-full h-full bg-[#000000] opacity-[0.65] top-0 left-0 hidden"></div>
+                <div id="successfulSubmitContainer" class="z-[11] top-[6%] right-0 md:top-[12%] md:right-[3%] bg-[#7bf39f] border-[1px] rounded-lg border-[#175f2c] h-fit w-full py-[25px] px-[30px] absolute  flex justify-center items-center">
+                    <p class="text-[#175f2c] text-2xl uppercase">You've successfully subscribed to our mailing list!</p>
+                </div>
                 <div id="mailingContainer" class="hidden md:absolute w-full md:h-[12%] md:flex justify-center items-center">
                     <div id="joinButton" class="flex flex-col justify-center items-center">
                         <button id="button" onclick="openMailingForm()" class="text-3xl w-fit font-medium bg-[#FFFAFA] px-[45px] py-[15px] md:shadow-[8px_8px_14px_0_rgba(0,0,0,0.3)] border-[4px] border-[#164B7D] ">Join Our <span class="text-[#164B7D]">Mailing List!</span></button>
                         <div id="mailingFormContainer" class="md:w-[500px] md:h-[500px] bg-[#164B7D] hidden md:shadow-[8px_8px_14px_0_rgba(0,0,0,0.3)] border-[2px] border-[#FFFAFA]">
                             <iframe name="hiddenFrame" class="hidden"></iframe>
-                            <form action="https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7" method="POST" target="hiddenFrame" class="flex h-full justify-center items-center">
+                            <!-- https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7 -->
+                            <form action="" method="POST" target="hiddenFrame" class="flex h-full justify-center items-center">
                                 <div class="w-[90%] h-[90%]">
                                     <div id="infoSection" class="h-[80%] flex flex-col justify-around">
                                         <div id="infoName" class="flex justify-around">
