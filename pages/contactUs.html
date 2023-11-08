@@ -93,23 +93,23 @@
                     <div class="h-full w-full flex justify-center items-center">
                         <iframe name="hiddenFrame" class="hidden"></iframe>
                         <form action="https://formspree.io/f/meqbdrvj" method="POST" target="hiddenFrame" class="flex flex-col h-full w-full items-center bg-[#ffffff]">
-                            <div id="detailsContainer" class="h-[80%] w-[90%] flex flex-col justify-around my-[15px]">
+                            <div id="detailsContainer" class="h-[80%] w-[90%] flex flex-col justify-around my-[5px] md:my-[15px]">
                                 <div id="nameSection" class="flex flex-col w-full md:flex-row">
-                                    <label for="name" class="md:text-3xl text-[#164B7D] uppercase mr-[10px]">Name:</label>
+                                    <label for="name" class="text-lg md:text-3xl text-[#164B7D] uppercase mr-[10px]">Name:</label>
                                     <input type="text" id="name" title="name" name="name" class="md:text-xl md:w-full md:max-w-[1000px] bg-[#e3e5e8]" required/>
                                 </div>
                                 <div id="emailSection" class="flex flex-col w-full md:flex-row">
-                                    <label class="md:text-3xl text-[#164B7D] uppercase mr-[8px]">Email:</label>
+                                    <label class="text-lg md:text-3xl text-[#164B7D] uppercase mr-[8px]">Email:</label>
                                     <input type="text" id="email" title="email" name="_replyto" class="md:text-xl md:w-full md:max-w-[1000px] bg-[#e3e5e8]" required/>
                                 </div>
-                                <div id="messageSection" class="flex h-[70%] w-full">
+                                <div id="messageSection" class="flex h-[60%] md:h-[70%] w-full">
                                     <div class="flex flex-col h-full w-full">
-                                        <label class="md:text-3xl text-[#164B7D] uppercase">Message:</label>
+                                        <label class="text-lg md:text-3xl text-[#164B7D] uppercase">Message:</label>
                                         <textarea name="message" id="message" class="min-h-full max-h-full md:px-[5px] md:w-full md:max-w-[1085px] md:min-w-[500px] md:min-h-[170px] md:max-h-[545px] md:h-[545px] bg-[#e3e5e8]" required></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-[15px]">
+                            <div class=" mt-[25px] md:mt-[15px]">
                                 <button type="submit" class="text-xl md:text-3xl font-semibold text-[#FFFAFA] uppercase bg-[#164B7D] border-[#000000] border-[2px] py-[10px] md:py-[20px] px-[10px] md:px-[35px]">Send</button>
                             </div>
                         </form>
