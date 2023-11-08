@@ -1,8 +1,22 @@
 var scale = window.devicePixelRatio
-if(scale > 1){
-    if(scale === 1.5){
-        document.documentElement.style.zoom = "0.5"
+if(scale >= 1.5){
+    const textElements = document.querySelectorAll('*:not(script):not(style):not([class^="fa-"])');
+    const fontSizeReductionFactor = 0.8;
+    textElements.forEach((element) => {
+    const computedStyle = getComputedStyle(element);
+    const currentFontSize = parseFloat(computedStyle.fontSize);
+    if(currentFontSize < 30){
+        const newFontSize = currentFontSize * .9;
+        element.style.fontSize = newFontSize + 'px';
+    } else if (currentFontSize >= 30 && currentFontSize < 48){
+        const newFontSize = currentFontSize * .7;
+        element.style.fontSize = newFontSize + 'px';
+    } else if(currentFontSize >= 48 && currentFontSize < 120){
+        const newFontSize = currentFontSize * .6;
+        element.style.fontSize = newFontSize + 'px';
     }
+    
+    });
 }
 
 function myMenu(){
