@@ -86,37 +86,39 @@
                 </div>
             </header>
             <main class="flex justify-center items-center w-full h-full md:h-[90%]">
-                <section id="formContainer" class="w-[90%] md:w-[90%] md:max-w-[1250px] h-[90%] md:h-[80%] bg-[#e4ebf3cc] border-[4px] md:border-[8px] border-[#FDD700] mb-4 md:mb-0 flex flex-col justify-between items-center">
-                    <div class="bg-[#164B7D] h-[100px] md:h-[150px] w-[100%] flex justify-center items-center border-b-[5px] border-[#FDD700]">
-                        <h2 id="contentHeader" class="text-[42px] md:text-7xl font-semibold text-center text-[#FFFAFA] uppercase">Contact Us</h2>
-                    </div>
-                    <div class="h-full w-full flex justify-center items-center">
-                        <iframe name="hiddenFrame" class="hidden"></iframe>
-                        <div id="successfulSubmitContainer" class="z-[11] top-[15px] right-0 md:top-[12%] md:right-[3%] bg-[#7bf39f] border-[1px] rounded-lg border-[#175f2c] h-fit w-full md:w-fit py-[25px] px-[30px] absolute hidden flex justify-center items-center">
-                            <p class="text-[#175f2c] text-xl md:text-2xl uppercase">Message Sent!</p>
+                <section id="formContainer" class="w-[90%] md:w-[90%] md:max-w-[1250px] h-[90%] md:h-[80%]">
+                    <div id="wrapper" class=" w-full border-[4px] md:border-[8px] border-[#FDD700] mb-4 md:mb-0 flex flex-col items-center overflow-auto">
+                        <div class="bg-[#164B7D] h-[100px] md:h-[150px] w-[100%] flex justify-center items-center border-b-[5px] border-[#FDD700]">
+                            <h2 id="contentHeader" class="text-[42px] md:text-7xl font-semibold text-center text-[#FFFAFA] uppercase">Contact Us</h2>
                         </div>
-                        <!-- https://formspree.io/f/meqbdrvj -->
-                        <form action="https://formspree.io/f/meqbdrvj" method="POST" target="hiddenFrame" class="flex flex-col h-full w-full items-center bg-[#ffffff]">
-                            <div id="detailsContainer" class="h-[80%] w-[90%] flex flex-col justify-around my-[5px] md:my-[15px]">
-                                <div id="nameSection" class="flex flex-col w-full md:flex-row">
-                                    <label for="name" class="text-lg md:text-3xl text-[#164B7D] uppercase mr-[10px]">Name:</label>
-                                    <input type="text" id="name" title="name" name="name" class="md:text-xl md:w-full md:max-w-[1000px] bg-[#e3e5e8]" required/>
-                                </div>
-                                <div id="emailSection" class="flex flex-col w-full md:flex-row">
-                                    <label id="emailLabel" class="text-lg md:text-3xl text-[#164B7D] uppercase mr-[8px]">Email:</label>
-                                    <input type="text" id="email" title="email" name="_replyto" class="md:text-xl md:w-full md:max-w-[1000px] bg-[#e3e5e8]" required/>
-                                </div>
-                                <div id="messageSection" class="flex h-[60%] md:h-[70%] w-full">
-                                    <div class="flex flex-col h-full w-full">
-                                        <label class="text-lg md:text-3xl text-[#164B7D] uppercase">Message:</label>
-                                        <textarea name="message" id="message" class="min-h-full max-h-full md:px-[5px] md:w-full md:max-w-[1085px] md:min-w-[500px] md:min-h-[170px] md:max-h-[300px] md:h-[300px] bg-[#e3e5e8]" required></textarea>
+                        <div class="h-full w-full">
+                            <iframe name="hiddenFrame" class="hidden"></iframe>
+                            <div id="successfulSubmitContainer" class="z-[11] top-[15px] right-0 md:top-[12%] md:right-[3%] bg-[#7bf39f] border-[1px] rounded-lg border-[#175f2c] h-fit w-full md:w-fit py-[25px] px-[30px] absolute hidden flex justify-center items-center">
+                                <p class="text-[#175f2c] text-xl md:text-2xl uppercase">Message Sent!</p>
+                            </div>
+                            <!-- https://formspree.io/f/meqbdrvj -->
+                            <form action="https://formspree.io/f/meqbdrvj" method="POST" target="hiddenFrame" class="flex flex-col h-full w-full items-center bg-[#ffffff]">
+                                <div id="detailsContainer" class="h-[80%] w-[90%] flex flex-col justify-around my-[5px] md:[&>*]:my-[25px]">
+                                    <div id="nameSection" class="flex flex-col w-full md:flex-row">
+                                        <label for="name" class="text-lg md:text-3xl text-[#164B7D] uppercase mr-[10px]">Name:</label>
+                                        <input type="text" id="name" title="name" name="name" class="md:text-xl md:w-full md:max-w-[1000px] bg-[#e3e5e8]" required/>
+                                    </div>
+                                    <div id="emailSection" class="flex flex-col w-full md:flex-row">
+                                        <label id="emailLabel" class="text-lg md:text-3xl text-[#164B7D] uppercase mr-[8px]">Email:</label>
+                                        <input type="text" id="email" title="email" name="_replyto" class="md:text-xl md:w-full md:max-w-[1000px] bg-[#e3e5e8]" required/>
+                                    </div>
+                                    <div id="messageSection" class="flex h-[60%] md:h-[70%] w-full ">
+                                        <div class="flex flex-col h-full w-full ">
+                                            <label class="text-lg md:text-3xl text-[#164B7D] uppercase">Message:</label>
+                                            <textarea name="message" id="message" class="min-h-full max-h-full md:px-[5px] md:w-full md:max-w-[1085px] md:min-w-[500px] md:min-h-[350px]  md:h-[350px] bg-[#e3e5e8]" required></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="sendButtonContainer" class=" mt-[25px] md:mt-[15px]">
-                                <button id="sendButton" type="submit" class="text-xl md:text-3xl font-semibold text-[#FFFAFA] uppercase bg-[#164B7D]  border-[2px] py-[10px] md:py-[20px] px-[10px] md:px-[35px]"><span class="text-2xl">Send</span></button>
-                            </div>
-                        </form>
+                                <div id="sendButtonContainer" class=" mt-[25px] md:my-[15px]">
+                                    <button id="sendButton" type="submit" class="text-xl md:text-3xl font-semibold text-[#FFFAFA] uppercase bg-[#164B7D]  border-[2px] py-[10px] md:py-[20px] px-[10px] md:px-[35px]"><span class="text-2xl">Send</span></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </section>
             </main>

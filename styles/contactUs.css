@@ -1,4 +1,7 @@
-body::-webkit-scrollbar {
+#body::-webkit-scrollbar {
+    display: none;
+}
+#wrapper::-webkit-scrollbar {
     display: none;
 }
 
