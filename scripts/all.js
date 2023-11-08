@@ -1,3 +1,10 @@
+var scale = window.devicePixelRatio
+if(scale > 1){
+    if(scale === 1.5){
+        document.documentElement.style.zoom = "0.5"
+    }
+}
+
 function myMenu(){
     const nav = document.getElementById("navbar")
     const links = document.getElementById("linkContainer2")
