@@ -6,16 +6,19 @@ let messageBox = document.getElementById("message")
 let email = document.getElementById("emailLabel")
 let sendButton = document.getElementById("sendButton")
 let sendButtonContainer= document.getElementById("sendButtonContainer")
-if(scale > 1.5){
-    console.log("hi");
-    email.style.marginRight = "6px"
-    messageBox.style.height = "150px"
-    messageBox.style.maxHeight = "150px"
-    sendButton.style.paddingTop = "5px"
-    sendButton.style.paddingBottom = "5px"
-    sendButtonContainer.style.marginBottom = "10px"
-    messageBox.style.fontSize = "20px"
+if(!(/Mobi|Android/i.test(navigator.userAgent))){
+    if(scale > 1.5){
+        console.log("hi");
+        email.style.marginRight = "6px"
+        messageBox.style.height = "150px"
+        messageBox.style.maxHeight = "150px"
+        sendButton.style.paddingTop = "5px"
+        sendButton.style.paddingBottom = "5px"
+        sendButtonContainer.style.marginBottom = "10px"
+        messageBox.style.fontSize = "20px"
+    }
 }
+
 
 addEventListener("submit", function() {
     if(window.innerWidth >= 768){

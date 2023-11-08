@@ -2832,16 +2832,16 @@ video {
     height: 150px;
   }
 
+  .md\:h-\[300px\] {
+    height: 300px;
+  }
+
   .md\:h-\[3050px\] {
     height: 3050px;
   }
 
   .md\:h-\[500px\] {
     height: 500px;
-  }
-
-  .md\:h-\[545px\] {
-    height: 545px;
   }
 
   .md\:h-\[625px\] {
@@ -2879,22 +2879,6 @@ video {
   .md\:h-max {
     height: -moz-max-content;
     height: max-content;
-  }
-
-  .md\:h-\[3px\] {
-    height: 3px;
-  }
-
-  .md\:h-\[300px\] {
-    height: 300px;
-  }
-
-  .md\:max-h-\[545px\] {
-    max-height: 545px;
-  }
-
-  .md\:max-h-\[500px\] {
-    max-height: 500px;
   }
 
   .md\:max-h-\[300px\] {
