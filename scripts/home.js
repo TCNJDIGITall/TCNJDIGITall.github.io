@@ -13,7 +13,10 @@ var authorContainer = document.getElementById("authorContainer");
 var blamoContainer = document.getElementById("blamoIconContainer")
 var blamo = document.getElementById("blamoIcon");
 
-authorContainer.style.display = "none"
+if(window.innerWidth >= 768){
+    authorContainer.style.display = "none"
+}
+
 
 blamoContainer.addEventListener("mouseover", () => {
     blamo.style.filter = "invert(96%) sepia(2%) saturate(823%) hue-rotate(314deg) brightness(102%) contrast(102%)"
