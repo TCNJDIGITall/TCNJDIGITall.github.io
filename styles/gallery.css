@@ -2,8 +2,18 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+iframe::-webkit-scrollbar {
+  display: none;
+}
+
+
 body {
-    -ms-overflow-style: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+iframe {
+  -ms-overflow-style: none;
   scrollbar-width: none; 
 }
 
