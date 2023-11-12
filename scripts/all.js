@@ -1,4 +1,5 @@
 var scale = window.devicePixelRatio
+var content = document.getElementById("content")
 if(!(/Mobi|Android/i.test(navigator.userAgent))){
     if(scale >= 1.5){
         const textElements = document.querySelectorAll('*:not(script):not(style):not([class^="fa-"])');
@@ -16,6 +17,24 @@ if(!(/Mobi|Android/i.test(navigator.userAgent))){
                 element.style.fontSize = newFontSize + 'px';
             }
         });
+        content.style.transform = 'scale(.9)'
+    } else if(scale >= 1.25 && scale < 1.5){
+        const textElements = document.querySelectorAll('*:not(script):not(style):not([class^="fa-"])');
+        textElements.forEach((element) => {
+            const computedStyle = getComputedStyle(element);
+            const currentFontSize = parseFloat(computedStyle.fontSize);
+            if(currentFontSize < 30){
+                const newFontSize = currentFontSize * 1;
+                element.style.fontSize = newFontSize + 'px';
+            } else if (currentFontSize >= 30 && currentFontSize < 48){
+                const newFontSize = currentFontSize * .8;
+                element.style.fontSize = newFontSize + 'px';
+            } else if(currentFontSize >= 48 && currentFontSize < 120){
+                const newFontSize = currentFontSize * .7;
+                element.style.fontSize = newFontSize + 'px';
+            }
+        });
+        content.style.transform = 'scale(.95)'
     }
 }
 

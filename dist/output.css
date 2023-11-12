@@ -900,6 +900,10 @@ video {
   height: 100vh;
 }
 
+.h-\[5000px\] {
+  height: 5000px;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -943,6 +947,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[5000px\] {
+  width: 5000px;
 }
 
 .min-w-full {

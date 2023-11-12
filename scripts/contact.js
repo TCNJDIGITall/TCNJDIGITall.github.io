@@ -7,11 +7,18 @@ let email = document.getElementById("emailLabel")
 let sendButton = document.getElementById("sendButton")
 let sendButtonContainer= document.getElementById("sendButtonContainer")
 if(!(/Mobi|Android/i.test(navigator.userAgent))){
-    if(scale > 1.5){
-        console.log("hi");
+    if(scale >= 1.5){
         email.style.marginRight = "6px"
         messageBox.style.height = "150px"
         messageBox.style.maxHeight = "150px"
+        sendButton.style.paddingTop = "5px"
+        sendButton.style.paddingBottom = "5px"
+        sendButtonContainer.style.marginBottom = "10px"
+        messageBox.style.fontSize = "20px"
+    } else if(scale >= 1.25 && scale < 1.5){
+        email.style.marginRight = "4px"
+        messageBox.style.height = "170px"
+        messageBox.style.maxHeight = "170px"
         sendButton.style.paddingTop = "5px"
         sendButton.style.paddingBottom = "5px"
         sendButtonContainer.style.marginBottom = "10px"

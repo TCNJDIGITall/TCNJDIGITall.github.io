@@ -8,7 +8,11 @@ formContainer.style.display = "none"
 successMessage.style.display = "none"
 let submitCount = 0
 
-
+if(!(/Mobi|Android/i.test(navigator.userAgent))){
+    if(scale >= 1.25){
+        formContainerBg.style.transform = "scale(2)"
+    }
+}
 
 async function openMailingForm(){
     if(formContainer.style.display == "none"){
