@@ -11,3 +11,8 @@ body {
 #linkContainer a {
     cursor: pointer;
 }
+
+#blamoIconContainer:hover {
+    background-color: #164B7D;
+    border-color: #FDD700;
+}

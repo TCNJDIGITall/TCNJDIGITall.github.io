@@ -14,9 +14,9 @@ body {
 }
 
 #membersContainer a:hover {
-  transition: ease-in .3s ;
+  transition: ease-in .2s ;
 }
 
 #membersContainer a {
-  transition: ease-out .3s ;
+  transition: ease-out .5s ;
 }

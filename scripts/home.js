@@ -4,15 +4,39 @@ var mailingFormContainer = document.getElementById("mailingContainer")
 var formContainer = document.getElementById("mailingFormContainer");
 var formContainerBg = document.getElementById("mailingFormContainerBackground");
 var successMessage = document.getElementById("successfulSubmitContainer")
+
 formContainer.style.display = "none"
 successMessage.style.display = "none"
 let submitCount = 0
+
+var authorContainer = document.getElementById("authorContainer");
+var blamoContainer = document.getElementById("blamoIconContainer")
+var blamo = document.getElementById("blamoIcon");
+
+authorContainer.style.display = "none"
+
+blamoContainer.addEventListener("mouseover", () => {
+    blamo.style.filter = "invert(96%) sepia(2%) saturate(823%) hue-rotate(314deg) brightness(102%) contrast(102%)"
+})
+
+blamoContainer.addEventListener("mouseout", () => {
+    blamo.style.filter = ""
+})
+
 
 if(!(/Mobi|Android/i.test(navigator.userAgent))){
     if(scale >= 1.25){
         formContainerBg.style.transform = "scale(2)"
     }
 }
+
+if(window.innerWidth >= 768){
+    setTimeout(function () {
+        authorContainer.style.display = "flex"
+        authorContainer.style.animation = "slide-right 3.2s"
+    }, 2000);
+}
+
 
 async function openMailingForm(){
     if(formContainer.style.display == "none"){
@@ -24,15 +48,20 @@ async function openMailingForm(){
         formContainer.style.marginBottom = "20px";
         formContainerBg.style.display = "block"
         formContainerBg.style.animation = "fade-in 1s"
+        mailingFormContainer.style.zIndex = "6"
+        formContainerBg.style.zIndex = "5"
         mailingFormContainer.style.alignItems = "end"
         button.style.animation = "none";
         mailingFormContainer.style.animation = "slide-up 1s"
     } else if (formContainer.style.display != "none") {
         formContainer.style.zIndex = 0;
         button.style.marginBottom  = "100px";
+        authorContainer.style.position = "absolute";
         formContainerBg.style.animation = "fade-out 0.5s"
         mailingFormContainer.style.alignItems = "center";
         mailingFormContainer.style.animation = "slide-down 0.5s"
+        mailingFormContainer.style.zIndex = "1"
+        formContainerBg.style.zIndex = "0"
         setTimeout(function () {
             header.style.zIndex = 10;
             button.style.zIndex = 0;
@@ -41,7 +70,7 @@ async function openMailingForm(){
             formContainerBg.style.display = "none";
             formContainer.style.display = "none";
             button.style.animation = "bounce 3s infinite";
-        }, 500);
+        }, 495);
     }
 }
 
@@ -52,6 +81,8 @@ async function closeMailingForm(){
     formContainerBg.style.animation = "fade-out 0.5s"
     mailingFormContainer.style.alignItems = "center";
     mailingFormContainer.style.animation = "slide-down 0.5s"
+    mailingFormContainer.style.zIndex = "1"
+    formContainerBg.style.zIndex = "0"
     setTimeout(function () {
         header.style.zIndex = 10;
         button.style.zIndex = 0;
@@ -60,7 +91,7 @@ async function closeMailingForm(){
         formContainerBg.style.display = "none";
         formContainer.style.display = "none";
         button.style.animation = "bounce 3s infinite";
-    }, 500);
+    }, 495);
     
 }
 
@@ -68,7 +99,7 @@ addEventListener("submit", function() {
     if(window.innerWidth >= 768){
         if(successMessage.style.display == "none"){
             successMessage.style.display = "block"
-            successMessage.style.animation = "slide-right 1.5s"
+            successMessage.style.animation = "slide-left 1.5s"
         }
         setTimeout(function(){
             location.reload();
@@ -100,5 +131,7 @@ addEventListener("submit", function() {
 window.addEventListener("resize", () => {
     if (window.innerWidth < 768){
         closeMailingForm();
+        authorContainer.style.position = "relative";
     }
+    
 })

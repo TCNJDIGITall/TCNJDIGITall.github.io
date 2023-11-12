@@ -1,5 +1,7 @@
 var scale = window.devicePixelRatio
 var content = document.getElementById("content")
+
+
 if(!(/Mobi|Android/i.test(navigator.userAgent))){
     if(scale >= 1.5){
         const textElements = document.querySelectorAll('*:not(script):not(style):not([class^="fa-"])');

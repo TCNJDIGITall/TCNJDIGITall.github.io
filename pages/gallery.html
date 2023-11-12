@@ -49,6 +49,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
         <script src="../scripts/all.js" defer></script>
+        <script src="../scripts/gallery.js" defer></script>
         <script type="text/javascript" src="https://www.juicer.io/embed/tcnjdigit-all/embed-code.js" async defer></script>
     </head>
     <body class="bg-[#164B7D]">
@@ -86,8 +87,11 @@
                 </div>
             </header>
             <main class="flex justify-center items-center w-full h-full md:h-[90vh]">
-                <section id="formContainer" class="w-[90%] md:w-[90%] md:max-w-[1250px] h-[90%] md:h-[80%] bg-[#e4ebf3cc] border-[4px] md:border-[8px] border-[#FDD700] mb-4 md:mb-0 flex flex-col justify-between items-center overflow-auto">
-                    <iframe src='https://www.juicer.io/api/feeds/tcnjdigit-all/iframe' height='1000' style='display:block;margin:0 auto;' class="w-full"></iframe>
+                <section id="galleryContainer" class="w-[90%] md:w-[90%] md:max-w-[1250px] h-[90%] md:h-[80%] bg-[#FFFAFA] border-[4px] md:border-[8px] border-[#FDD700] mb-4 md:mb-0 flex flex-col justify-between items-center overflow-auto">
+                    <div id="headingContainer" class="bg-[#164B7D] h-[100px] md:h-[150px] flex justify-center items-center border-b-[5px] border-l-[5px] border-r-[5px] border-[#FDD700] fixed">
+                        <h2 id="contentHeader" class="text-[42px] md:text-7xl font-semibold text-center text-[#FFFAFA] uppercase ">Gallery</h2>
+                    </div>
+                    <iframe id="iframe" src='https://www.juicer.io/api/feeds/tcnjdigit-all/iframe' height='1000' class="w-full"></iframe>
                 </section>
             </main>
         </div>
