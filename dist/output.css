@@ -2194,10 +2194,6 @@ video {
   padding-bottom: 5px;
 }
 
-.pl-\[15px\] {
-  padding-left: 15px;
-}
-
 .pl-\[18px\] {
   padding-left: 18px;
 }
@@ -2212,10 +2208,6 @@ video {
 
 .pr-\[18px\] {
   padding-right: 18px;
-}
-
-.pr-\[\] {
-  padding-right: ;
 }
 
 .text-left {
@@ -2949,10 +2941,6 @@ video {
 
   .md\:min-h-\[170px\] {
     min-height: 170px;
-  }
-
-  .md\:w-\[1000px\] {
-    width: 1000px;
   }
 
   .md\:w-\[1100px\] {
