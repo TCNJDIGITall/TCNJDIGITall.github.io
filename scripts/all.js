@@ -40,6 +40,16 @@ if(!(/Mobi|Android/i.test(navigator.userAgent))){
     }
 }
 
+const navHelper = document.getElementById("navHelper")
+const navbar = document.getElementById("navbar")
+const windowWidth = window.innerWidth;
+if (windowWidth > 768){
+    if (navbar.offsetWidth == windowWidth) {
+        navHelper.style.alignItems = "flex-start";
+    } else {
+        navHelper.style.alignItems = "flex-end";
+    }
+}
 
 function myMenu(){
     const nav = document.getElementById("navbar")
@@ -62,8 +72,17 @@ function myMenu(){
 
 window.addEventListener("resize", () => {
     const links = document.getElementById("linkContainer2")
-    windowWidth = window.innerWidth;
+    const navHelper = document.getElementById("navHelper")
+    const navbar = document.getElementById("navbar")
+    const windowWidth = window.innerWidth;
     if (windowWidth > 768){
         links.style.display = "none";
+        if (navbar.offsetWidth == windowWidth) {
+            navHelper.style.alignItems = "flex-start";
+        } else {
+            navHelper.style.alignItems = "flex-end";
+        }
     }
+
+    
 })

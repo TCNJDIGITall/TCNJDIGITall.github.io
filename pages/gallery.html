@@ -60,36 +60,58 @@
             <img src="../images/background.jpg" alt="" class="h-[100vh] w-[100vw] object-cover opacity-[.75]">
         </div>
         <div id="content" class="flex flex-col relative h-full w-full">
-            <header id="header" class="h-[100px] md:h-[10vh] w-full z-10">
-                <div class="flex flex-col md:flex-row md:justify-center items-start md:items-end w-full h-full">
-                    <nav id="navbar" class="flex flex-row items-center justify-between bg-[#FFFAFA] w-full md:w-[1100px] md:shadow-[8px_8px_20px_0_rgba(0,0,0,0.3)]">
+            <header id="header" class="h-[100px] md:h-[10vh] w-full z-10 sticky top-0 md:top-auto md:static">
+                <div id="navHelper" class="flex flex-col md:flex-row md:justify-center items-start md:items-end w-full h-full">
+                    <nav id="navbar" class=" flex flex-row items-center justify-between bg-[#FFFAFA] w-full md:w-[1100px] md:shadow-[8px_8px_20px_0_rgba(0,0,0,0.3)]">
                         <div id="iconContainer" class="pl-[18px] flex h-full">
                             <a href="../index.html" class="pr-[15px]">
                                 <img src="../images/icon2.png" class="h-[70px] md:h-[80px]">
                             </a>
-                            <a href="https://www.instagram.com/tcnjdigit.all/" class="flex justify-center items-center  md:hidden" target="_blank">
+                            <a href="https://www.instagram.com/tcnjdigit.all/" class="flex justify-center items-center md:hidden" target="_blank">
                                 <i class="fa-brands fa-instagram text-3xl text-[#164B7D]"></i>
                             </a>
                         </div>
                         <a href="javascript:void(0);" id="hamburgerMenu" class="md:hidden pr-[18px]" onclick="myMenu()">
                             <i class="fa fa-bars text-[#164B7D]"></i>
                         </a>
-                        <div id="linkContainer" class="hidden md:block [&>*]:md:mx-2 [&>*]:lg:mx-3 [&>*]:md:text-[18px] [&>*]:lg:text-2xl [&>*]:select-none md:pr-[1px] md:pr-[15px]">
-                            <a href="../index.html" class="uppercase text-[#164B7D]">Home</a>
-                            <a href="./members.html" class="uppercase text-[#164B7D]">Members</a>
-                            <a href="./contactUs.html" class="uppercase text-[#164B7D]">Contact Us</a>
-                            <a class="text-[#2D7CC8] uppercase font-bold border-b-2 border-[#2D7CC8]">Gallery</a>
-                            <a href="https://www.instagram.com/tcnjdigit.all" class="uppercase text-[#164B7D]" target="_blank">Instagram</a>
-                            <a href="https://computerscience.tcnj.edu/" class="uppercase text-[#164B7D]" target="_blank">CS Department</a>
-                        </div>
+                        <ul id="linkContainer" class="hidden md:inline-flex [&>*]:md:mx-2 [&>*]:lg:mx-3 [&>*]:md:text-[18px] [&>*]:lg:text-2xl [&>*]:select-none md:pr-[1px]">
+                            <li>
+                                <a href="../index.html" class="uppercase text-[#164B7D]">Home</a>
+                            </li>
+                            <li>
+                                <a href="./members.html" class="uppercase text-[#164B7D]">Members</a>
+                            </li>
+                            <li>
+                                <a href="./contactUs.html" class="uppercase text-[#164B7D]">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="text-[#2D7CC8] uppercase font-bold border-b-2 border-[#2D7CC8]">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/tcnjdigit.all" class="uppercase text-[#164B7D]" target="_blank">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://computerscience.tcnj.edu/" class="uppercase text-[#164B7D]" target="_blank">CS Department</a>
+                            </li>
+                        </ul>
                     </nav>
-                    <div id="linkContainer2" class="hidden [&>*]:md:mx-2 [&>*]:text-2xl [&>*]:select-none w-[100vw]">
-                        <a href="../index.html" class="uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Home</a>
-                        <a href="./members.html" class="uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Members</a>
-                        <a href="./contactUs.html" class="uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Contact Us</a>
-                        <a href="./gallery.html" class="text-[#2D7CC8] uppercase w-full font-bold border-b-2 border-[#2D7CC8] bg-[#fffafaf2] text-center">Gallery</a>
-                        <a href="https://computerscience.tcnj.edu/" class="uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">CS Department</a>
-                    </div>
+                    <ul id="linkContainer2" class="hidden [&>*]:text-2xl [&>*]:select-none w-[100vw]">
+                        <li>
+                            <a class="block text-[#2D7CC8] uppercase w-full font-bold border-b-2 border-[#2D7CC8] bg-[#fffafaf2] text-center">Home</a>
+                        </li>
+                        <li>
+                            <a href="./pages/members.html" class="block uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Members</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contactUs.html" class="block uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="./pages/gallery.html" class="block uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="https://computerscience.tcnj.edu/" class="block uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">CS Department</a>
+                        </li>
+                    </ul>
                 </div>
             </header>
             <main class="flex justify-center items-center w-full h-full md:h-[90vh]">
