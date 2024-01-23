@@ -2468,6 +2468,22 @@ video {
   opacity: 0.65;
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-\[\] {
+  opacity: ;
+}
+
+.opacity-\[\.6\] {
+  opacity: .6;
+}
+
+.opacity-\[\.63\] {
+  opacity: .63;
+}
+
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -3102,6 +3118,10 @@ video {
 
   .md\:tracking-wide {
     letter-spacing: 0.025em;
+  }
+
+  .md\:opacity-\[\.75\] {
+    opacity: .75;
   }
 
   .md\:shadow-\[8px_8px_14px_0_rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
