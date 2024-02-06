@@ -2460,28 +2460,16 @@ video {
   -moz-osx-font-smoothing: auto;
 }
 
+.opacity-\[\.63\] {
+  opacity: .63;
+}
+
 .opacity-\[\.75\] {
   opacity: .75;
 }
 
 .opacity-\[0\.65\] {
   opacity: 0.65;
-}
-
-.opacity-50 {
-  opacity: 0.5;
-}
-
-.opacity-\[\] {
-  opacity: ;
-}
-
-.opacity-\[\.6\] {
-  opacity: .6;
-}
-
-.opacity-\[\.63\] {
-  opacity: .63;
 }
 
 .bg-blend-normal {
