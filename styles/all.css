@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech', sans-serif;
+}
+
+#linkContainer a {
+    cursor: pointer;
+}
+
+#blamoIconContainer:hover {
+    background-color: #164B7D;
+    border-color: #FDD700;
+}

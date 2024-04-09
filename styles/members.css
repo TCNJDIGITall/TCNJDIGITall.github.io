@@ -1,0 +1,22 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+#backgroundImg{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  position: fixed;
+}
+
+#membersContainer a:hover {
+  transition: ease-in .2s ;
+}
+
+#membersContainer a {
+  transition: ease-out .5s ;
+}

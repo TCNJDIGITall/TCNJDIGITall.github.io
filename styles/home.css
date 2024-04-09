@@ -1,0 +1,106 @@
+
+#textContainer {
+    text-shadow: 3px 3px 7px #000000cc;
+}
+
+@media only screen and (max-width: 768px) {
+    #textContainer {
+        text-shadow: 1px 1px 1px #000000cc;
+    }
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+
+@keyframes slide-up{
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-down{
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(200%);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 65%;
+    }
+}
+
+@keyframes fade-in2 {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 65%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes slide-left {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-right {
+    0%{
+        transform: translateX(-150%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+#button {
+    animation: bounce 3s infinite;
+}
+
+
+
+
+
+
+
+
+

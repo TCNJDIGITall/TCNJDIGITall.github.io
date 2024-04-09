@@ -1,1 +1,231 @@
-Hi
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <!-- SEO Optimization -->
+        <!-- Update Content Attributes -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TCNJ DIGIT.all | Home</title>
+        <meta name="description" content="DIGIT.all (Diversity &amp; Inclusion Group In Tech for All) is committed to making the tech community a space that is welcome to all. By providing the TCNJ community with accessible workshops and a space for guest speakers and peers alike to discuss their experiences in and around tech and tech culture, DIGIT.all seeks to promote diversity, inclusion, allyship, and awareness in STEM.">
+
+        <meta name="keywords" content="digitall,diversity,inclusion,allyship,code,tcnj,programming,college,club">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Simon Blamo">
+        <meta name="HandheldFriendly" content="true"> 
+        <meta name="rating" content="safe for kids">
+        <meta name="revised" content="">
+
+        <!-- Open Graph Protocol -->
+        <!-- If you wish to share this webpage on social media, uncomment this HTML Section, and update the content attributes -->
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="TCNJ DIGIT.all | Home">
+        <meta name="twitter:description" content="DIGIT.all (Diversity &amp; Inclusion Group In Tech for All) is committed to making the tech community a space that is welcome to all. By providing the TCNJ community with accessible workshops and a space for guest speakers and peers alike to discuss their experiences in and around tech and tech culture, DIGIT.all seeks to promote diversity, inclusion, allyship, and awareness in STEM.">
+        <meta name="twitter:image" content="./images/icon.png"> <!-- ADD -->
+        <meta name="twitter:image:src" content="./images/icon.png"> <!-- ADD -->
+
+        <meta property="og:title" content="TCNJ DIGIT.all | Home">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://tcnjdigitall.github.io/"> <!-- ADD -->
+        <meta property="og:image" content="./images/icon.png"> <!-- ADD -->
+        <meta property="og:description" content="DIGIT.all (Diversity &amp; Inclusion Group In Tech for All) is committed to making the tech community a space that is welcome to all. By providing the TCNJ community with accessible workshops and a space for guest speakers and peers alike to discuss their experiences in and around tech and tech culture, DIGIT.all seeks to promote diversity, inclusion, allyship, and awareness in STEM.">
+        <meta property="og:site_name" content="TCNJ DIGIT.all | Home">
+
+        <!-- Include your CSS files here -->
+        <link rel="stylesheet" href="./styles/all.css">
+        <link rel="stylesheet" href="./styles/home.css">
+        <link href="/dist/output.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&family=Share+Tech&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <script src="./scripts/all.js" defer></script>
+        <script src="./scripts/home.js" defer></script>
+    </head>
+    <body class="bg-[#164B7D] overflow-x-hidden md:overflow-hidden h-fit md:h-full">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="backgroundImg" class="h-full w-full">
+            <img src="./images/background3-2.jpeg" alt="" class="fixed object-cover h-screen min-w-full opacity-[.63] md:opacity-[.75]">
+        </div>
+        <div id="content" class="flex flex-col relative md:h-full w-full">
+            <header id="header" class="h-[100px] md:h-[10vh] w-full z-10 sticky top-0 md:top-auto md:static">
+                <div id="navHelper" class="flex flex-col md:flex-row md:justify-center items-start md:items-end w-full h-full">
+                    <nav id="navbar" class=" flex flex-row items-center justify-between bg-[#FFFAFA] w-full md:w-[1100px] md:shadow-[8px_8px_20px_0_rgba(0,0,0,0.3)]">
+                        <div id="iconContainer" class="pl-[18px] flex h-full">
+                            <a href="javascript:void(0);" class="pr-[15px]">
+                                <img src="./images/icon2.png" class="h-[70px] md:h-[80px]">
+                            </a>
+                            <a href="https://www.instagram.com/tcnjdigit.all/" class="flex justify-center items-center md:hidden" target="_blank">
+                                <i class="fa-brands fa-instagram text-3xl text-[#164B7D]"></i>
+                            </a>
+                        </div>
+                        <a href="javascript:void(0);" id="hamburgerMenu" class="md:hidden pr-[18px]" onclick="myMenu()">
+                            <i class="fa fa-bars text-[#164B7D]"></i>
+                        </a>
+                        <ul id="linkContainer" class="hidden md:inline-flex [&>*]:md:mx-2 [&>*]:lg:mx-3 [&>*]:md:text-[18px] [&>*]:lg:text-2xl [&>*]:select-none md:pr-[1px]">
+                            <li>
+                                <a href="javascript:void(0)" class="text-[#2D7CC8] uppercase font-bold border-b-2 border-[#2D7CC8]">Home</a>
+                            </li>
+                            <li>
+                                <a href="./pages/members.html" class="uppercase text-[#164B7D]">Members</a>
+                            </li>
+                            <li>
+                                <a href="./pages/contactUs.html" class="uppercase text-[#164B7D]">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="./pages/gallery.html" class="uppercase text-[#164B7D]">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/tcnjdigit.all" class="uppercase text-[#164B7D]" target="_blank">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://computerscience.tcnj.edu/" class="uppercase text-[#164B7D]" target="_blank">CS Department</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul id="linkContainer2" class="hidden [&>*]:text-2xl [&>*]:select-none w-[100vw]">
+                        <li>
+                            <a class="block text-[#2D7CC8] uppercase w-full font-bold border-b-2 border-[#2D7CC8] bg-[#fffafaf2] text-center">Home</a>
+                        </li>
+                        <li>
+                            <a href="./pages/members.html" class="block uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Members</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contactUs.html" class="block uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="./pages/gallery.html" class="block uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="https://computerscience.tcnj.edu/" class="block uppercase text-[#164B7D] w-full bg-[#fffafaf2] border-b-[1px] border-[#164B7D] text-center">CS Department</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <main class="h-[1200px] md:h-[90vh] flex flex-col md:block md:flex-row [&>*]:my-3 [&>*]:md:my-0 items-center md:items-start">
+                <section id="detailsContainer" class="h-[50%] md:h-[87%] md:w-full flex justify-center">
+                    <div id="textContainer" class="md:w-[65%] flex flex-col justify-center items-center md:items-start [&>*]:my-3 [&>*]:md:my-3">
+                        <h1 class="uppercase font-bold text-5xl text-center md:text-left md:text-[8vw] lg:text-[105px] md:tracking-wide border-b-[4px] md:border-b-[8px] border-[#FFFAFA] text-[#FFFAFA]  md:w-fit md:leading-[105px] select-none drop-shadow-md">Our Mission</h1>
+                        <div class="w-[90%] md:w-[75%] flex justify-center md:justify-start">
+                            <p class="text-center md:text-left text-2xl md:text-[3.5vw] lg:text-[35px] font-bold text-[#FFFAFA] md:leading-[1.3] select-none drop-shadow-md">DIGIT.all (Diversity & Inclusion Group In Tech for All) is committed to making the tech community a space that is welcome to all. By providing the TCNJ community with accessible workshops and a space for guest speakers and peers alike to discuss their experiences in and around tech and tech culture, DIGIT.all seeks to promote diversity, inclusion, allyship, and awareness in STEM.</p>
+                        </div>
+                    </div>
+                </section>
+                <div id="successfulSubmitContainer" class="z-[11] top-[15px] right-0 md:top-[12%] md:right-[3%] bg-[#7bf39f] border-[1px] rounded-lg border-[#175f2c] h-fit w-full md:w-fit py-[25px] px-[30px] absolute hidden flex justify-center items-center">
+                    <p class="text-[#175f2c] md:text-2xl uppercase">Successfully subscribed to our mailing list!</p>
+                </div>
+                <div id="mailingContainer" class="hidden md:fixed w-full md:h-[12%] md:flex justify-center items-center z-[1]">
+                    <div id="joinButton" class="flex flex-col justify-center items-center">
+                        <button id="button" onclick="openMailingForm()" class="text-3xl w-fit font-medium bg-[#FFFAFA] px-[45px] py-[15px] md:shadow-[8px_8px_14px_0_rgba(0,0,0,0.3)] border-[4px] border-[#164B7D] ">Join Our <span class="text-[#164B7D] text-3xl">Mailing List!</span></button>
+                        <div id="mailingFormContainer" class="md:w-[500px] md:h-[500px] bg-[#164B7D] hidden md:shadow-[8px_8px_14px_0_rgba(0,0,0,0.3)] border-[2px] border-[#FFFAFA]">
+                            <iframe name="hiddenFrame" class="hidden"></iframe>
+                            <!-- https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7 -->
+                            <form action="https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7" method="POST" target="hiddenFrame" class="flex h-full justify-center items-center">
+                                <div class="w-[90%] h-[90%]">
+                                    <div id="infoSection" class="h-[80%] flex flex-col justify-around">
+                                        <div id="infoName" class="flex justify-around">
+                                            <div id="firstNameSection" class="flex flex-col">
+                                                <label for="firstName" class="md:text-2xl text-[#FFFAFA]">First Name</label>
+                                                <input type="text" name="FNAME" id="firstName" title="firstName" class="text-xl" required/>
+                                            </div>
+                                            <div id="lastNameSection" class="flex flex-col">
+                                                <label for="lastName" class="md:text-2xl text-[#FFFAFA]">Last Name</label>
+                                                <input type="text" name="LNAME" id="lastName" title="lastName" class="text-xl" required/>
+                                            </div>
+                                        </div>
+                                        <div id="emailSection" class="flex justify-center items-center">
+                                            <div class="flex flex-col w-[95%]">
+                                                <label class="md:text-2xl text-[#FFFAFA]">Email</label>
+                                                    <input type="email" name="EMAIL" id="email" class="text-xl" required/>
+                                            </div>
+                                        </div>
+                                        <div id="majorSection" class="flex flex-col justify-center items-center">
+                                            <div class="flex flex-col w-[95%]">
+                                                <label class="md:text-2xl text-[#FFFAFA]">Major</label>
+                                                <input type="text" name="MAJOR" id="major" class="text-xl"required/>
+                                            </div>
+                                        </div>
+                                        <div id="yearSection" class="flex flex-col justify-center items-center">
+                                            <div class="flex flex-col w-[95%]">
+                                                <label class="md:text-2xl text-[#FFFAFA]">Graduation Year</label>
+                                                <input type="number" name="YEAR" id="major" class="text-xl" required/>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div id="submitSection" class="h-[20%] flex justify-center items-end">
+                                        <button type="submit" id="submit" class="uppercase bg-[#FFFAFA] text-5xl py-[15px] px-[45px] font-medium border-[3px] border-black">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="mailingFormContainer2" class="md:hidden w-[90%] h-[50%] bg-[#164B7D] border-[#FFFAFA] border-[2px] flex flex-col">
+                    <div class="bg-[#FFFAFA] w-full h-[10%] flex justify-center items-center">
+                        <h2 class="text-xl">Join Our <span class="text-[#164B7D]">Mailing List!</span></h2>
+                    </div>
+                    <form action="https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7" target="hiddenFrame" method="POST" class="flex h-[90%] justify-center items-center">
+                        <div class="w-[90%] h-[90%]">
+                            <div id="infoSection" class="h-[80%] flex flex-col justify-around">
+                                <div id="firstNameSection" class="flex justify-center items-center">
+                                    <div class="flex flex-col w-[95%]">
+                                        <label for="firstName" class="text-xl md:text-2xl text-[#FFFAFA]">First Name</label>
+                                        <input type="text" id="firstName" title="firstName" name="FNAME" class="text-lg md:text-xl" required/>
+                                    </div>
+                                </div>
+                                <div id="lastNameSection" class="flex justify-center items-center">
+                                    <div class="flex flex-col w-[95%]">
+                                        <label for="lastName" class="text-xl md:text-2xl text-[#FFFAFA]">Last Name</label>
+                                        <input type="text" id="lastName" name="LNAME" title="lastName" class="text-lg md:text-xl" required/>
+                                    </div>                                    
+                                </div>
+                                <div id="emailSection" class="flex justify-center items-center">
+                                    <div class="flex flex-col w-[95%]">
+                                        <label class="text-xl md:text-2xl text-[#FFFAFA]">Email</label>
+                                        <input type="email" name="EMAIL" id="email" class="text-lg md:text-xl" required/>
+                                    </div>
+                                </div>
+                                <div id="majorSection" class="flex flex-col justify-center items-center">
+                                    <div class="flex flex-col w-[95%]">
+                                        <label class="text-xl md:text-2xl text-[#FFFAFA]">Major</label>
+                                        <input type="text" name="MAJOR" id="major" class="text-lg md:text-xl" required/>
+                                    </div>
+                                </div>
+                                <div id="yearSection" class="flex flex-col justify-center items-center">
+                                    <div class="flex flex-col w-[95%]">
+                                        <label class="text-xl md:text-2xl text-[#FFFAFA]">Graduation Year</label>
+                                        <input type="number" name="YEAR" id="major" class="text-lg md:text-xl" required/>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div id="submitSection" class="h-[20%] flex justify-center items-end">
+                                <button type="submit" id="submit" class="uppercase bg-[#FFFAFA] text-2xl py-[5px] px-[25px] font-medium border-[3px] border-black">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="authorContainer" class="md:left-[20px] w-fit px-[10px] flex md:absolute h-[13%] justify-center items-center z-[3]">
+                    <a href="https://www.simonblamo.com" target="_blank">
+                        <div id="blamoIconContainer" class="bg-[#FFFAFA] h-fit py-[17px] px-[17px] rounded-full border-[#164B7D] border-[4px]">
+                            <img id="blamoIcon" src="./images/titleIcon2.svg" alt="" class="h-[42px]">
+                        </div>
+                    </a>
+                </div>
+                <div id="mailingFormContainerBackground" onclick="closeMailingForm()" class="fixed w-[5000px] h-[5000px] bg-[#000000] opacity-[0.65] top-0 left-0 hidden z-[0]"></div>
+            </main>
+        </div>
+    </body>
+</html>

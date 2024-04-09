@@ -1,0 +1,29 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+iframe::-webkit-scrollbar {
+  display: none;
+}
+
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+iframe {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+#backgroundImg{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  position: fixed;
+}
+
+#galleryContainer {
+  background: rgb(252,212,255);
+  background: linear-gradient(130deg, rgba(252,212,255,.7) 0%, rgba(185,255,232,.7) 48%, rgba(153,247,151,.7) 84%, rgba(153,247,151,.7) 84%, rgba(194,231,87,.7) 100%);
+}

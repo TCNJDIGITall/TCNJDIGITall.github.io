@@ -1,0 +1,42 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+#backgroundImg{
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  position: fixed;
+}
+
+#membersContainer a:hover {
+  transition: ease-in .3s ;
+}
+
+#membersContainer a {
+  transition: ease-out .3s ;
+}
+
+@keyframes slide-right {
+  0%{
+      transform: translateX(100%);
+  }
+
+  100%{
+      transform: translateX(0%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0%;
+  }
+
+  100% {
+      opacity: 100%;
+  }
+}
