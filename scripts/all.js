@@ -1,7 +1,10 @@
+// this script file is present within all pages of the application.
+
 var scale = window.devicePixelRatio
 var content = document.getElementById("content")
 
 
+// if the device is not an android, check the scale of zoom scale of the device, and adjust fonts and elements accordingly.
 if(!(/Mobi|Android/i.test(navigator.userAgent))){
     if(scale >= 1.5){
         const textElements = document.querySelectorAll('*:not(script):not(style):not([class^="fa-"])');
@@ -51,6 +54,7 @@ if (windowWidth > 768){
     }
 }
 
+// function to display menu when on mobile devices.
 function myMenu(){
     const nav = document.getElementById("navbar")
     const links = document.getElementById("linkContainer2")
@@ -70,6 +74,7 @@ function myMenu(){
 
 }
 
+// event listeners to help with application's responsive design.
 window.addEventListener("resize", () => {
     const links = document.getElementById("linkContainer2")
     const navHelper = document.getElementById("navHelper")
