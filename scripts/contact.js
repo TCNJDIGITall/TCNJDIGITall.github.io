@@ -1,3 +1,5 @@
+// this script file is present only on the contact page of the application.
+
 var successMessage = document.getElementById("successfulSubmitContainer")
 successMessage.style.display = "none"
 let submitCount = 0
@@ -6,6 +8,8 @@ let messageBox = document.getElementById("message")
 let email = document.getElementById("emailLabel")
 let sendButton = document.getElementById("sendButton")
 let sendButtonContainer= document.getElementById("sendButtonContainer")
+
+// condition to help with scaling. only occurs when the device is not a mobile device.
 if(!(/Mobi|Android/i.test(navigator.userAgent))){
     if(scale >= 1.5){
         email.style.marginRight = "6px"
@@ -27,6 +31,7 @@ if(!(/Mobi|Android/i.test(navigator.userAgent))){
 }
 
 
+// event listener to provide user feedback upon submission.
 addEventListener("submit", function() {
     if(window.innerWidth >= 768){
         if(successMessage.style.display == "none"){
