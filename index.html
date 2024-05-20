@@ -61,6 +61,8 @@
         <div id="content" class="flex flex-col relative md:h-full w-full">
             <header id="header" class="h-[100px] md:h-[10vh] w-full z-10 sticky top-0 md:top-auto md:static">
                 <div id="navHelper" class="flex flex-col md:flex-row md:justify-center items-start md:items-end w-full h-full">
+
+                    
                     <nav id="navbar" class=" flex flex-row items-center justify-between bg-[#FFFAFA] w-full md:w-[1100px] md:shadow-[8px_8px_20px_0_rgba(0,0,0,0.3)]">
                         <div id="iconContainer" class="pl-[18px] flex h-full">
                             <a href="javascript:void(0);" class="pr-[15px]">
@@ -73,6 +75,8 @@
                         <a href="javascript:void(0);" id="hamburgerMenu" class="md:hidden pr-[18px]" onclick="myMenu()">
                             <i class="fa fa-bars text-[#164B7D]"></i>
                         </a>
+
+                        <!-- DESKTOP NAVBAR LINKS -->
                         <ul id="linkContainer" class="hidden md:inline-flex [&>*]:md:mx-2 [&>*]:lg:mx-3 [&>*]:md:text-[18px] [&>*]:lg:text-2xl [&>*]:select-none md:pr-[1px]">
                             <li>
                                 <a href="javascript:void(0)" class="text-[#2D7CC8] uppercase font-bold border-b-2 border-[#2D7CC8]">Home</a>
@@ -94,6 +98,8 @@
                             </li>
                         </ul>
                     </nav>
+
+                    <!-- MOBILE NAVBAR LINKS -->
                     <ul id="linkContainer2" class="hidden [&>*]:text-2xl [&>*]:select-none w-[100vw]">
                         <li>
                             <a class="block text-[#2D7CC8] uppercase w-full font-bold border-b-2 border-[#2D7CC8] bg-[#fffafaf2] text-center">Home</a>
@@ -125,12 +131,16 @@
                 <div id="successfulSubmitContainer" class="z-[11] top-[15px] right-0 md:top-[12%] md:right-[3%] bg-[#7bf39f] border-[1px] rounded-lg border-[#175f2c] h-fit w-full md:w-fit py-[25px] px-[30px] absolute hidden flex justify-center items-center">
                     <p class="text-[#175f2c] md:text-2xl uppercase">Successfully subscribed to our mailing list!</p>
                 </div>
+
+                <!-- MAILING CONTAINER FOR DESKTOP -->
                 <div id="mailingContainer" class="hidden md:fixed w-full md:h-[12%] md:flex justify-center items-center z-[1]">
                     <div id="joinButton" class="flex flex-col justify-center items-center">
                         <button id="button" onclick="openMailingForm()" class="text-3xl w-fit font-medium bg-[#FFFAFA] px-[45px] py-[15px] md:shadow-[8px_8px_14px_0_rgba(0,0,0,0.3)] border-[4px] border-[#164B7D] ">Join Our <span class="text-[#164B7D] text-3xl">Mailing List!</span></button>
                         <div id="mailingFormContainer" class="md:w-[500px] md:h-[500px] bg-[#164B7D] hidden md:shadow-[8px_8px_14px_0_rgba(0,0,0,0.3)] border-[2px] border-[#FFFAFA]">
                             <iframe name="hiddenFrame" class="hidden"></iframe>
                             <!-- https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7 -->
+
+                            <!-- MAILING FORM -->
                             <form action="https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7" method="POST" target="hiddenFrame" class="flex h-full justify-center items-center">
                                 <div class="w-[90%] h-[90%]">
                                     <div id="infoSection" class="h-[80%] flex flex-col justify-around">
@@ -172,10 +182,14 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- MAILING CONTAINER FOR MOBILE -->
                 <div id="mailingFormContainer2" class="md:hidden w-[90%] h-[50%] bg-[#164B7D] border-[#FFFAFA] border-[2px] flex flex-col">
                     <div class="bg-[#FFFAFA] w-full h-[10%] flex justify-center items-center">
                         <h2 class="text-xl">Join Our <span class="text-[#164B7D]">Mailing List!</span></h2>
                     </div>
+
+                    <!-- MAILING FORM -->
                     <form action="https://tcnj.us10.list-manage.com/subscribe/post?u=bbccc42fc1a74775fee14e1a2&id=5a216ce7a7" target="hiddenFrame" method="POST" class="flex h-[90%] justify-center items-center">
                         <div class="w-[90%] h-[90%]">
                             <div id="infoSection" class="h-[80%] flex flex-col justify-around">
@@ -217,6 +231,8 @@
                         </div>
                     </form>
                 </div>
+
+                <!-- AUTHOR'S CREDIT SECTION -->
                 <div id="authorContainer" class="md:left-[20px] w-fit px-[10px] flex md:absolute h-[13%] justify-center items-center z-[3]">
                     <a href="https://www.simonblamo.com" target="_blank">
                         <div id="blamoIconContainer" class="bg-[#FFFAFA] h-fit py-[17px] px-[17px] rounded-full border-[#164B7D] border-[4px]">
