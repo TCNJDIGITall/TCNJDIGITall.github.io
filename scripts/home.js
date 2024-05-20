@@ -1,3 +1,5 @@
+// this script file is present only on the home page of the application.
+
 var header = document.getElementById("header");
 var button = document.getElementById("button");
 var mailingFormContainer = document.getElementById("mailingContainer")
@@ -40,7 +42,7 @@ if(window.innerWidth >= 768){
     }, 2000);
 }
 
-
+//function to open mailing form
 async function openMailingForm(){
     if(formContainer.style.display == "none"){
         header.style.zIndex = 0;
@@ -77,7 +79,7 @@ async function openMailingForm(){
     }
 }
 
-
+// function to close mailing form
 async function closeMailingForm(){
     formContainer.style.zIndex = 0;
     button.style.marginBottom  = "100px";
@@ -95,9 +97,9 @@ async function closeMailingForm(){
         formContainer.style.display = "none";
         button.style.animation = "bounce 3s infinite";
     }, 495);
-    
 }
 
+// event listener to help provide user feedback upon submission
 addEventListener("submit", function() {
     if(window.innerWidth >= 768){
         if(successMessage.style.display == "none"){
@@ -130,7 +132,7 @@ addEventListener("submit", function() {
     }
 })
 
-
+// event listener to help with resizing.
 window.addEventListener("resize", () => {
     if (window.innerWidth < 768){
         closeMailingForm();
